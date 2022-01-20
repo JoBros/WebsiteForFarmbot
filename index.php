@@ -46,7 +46,7 @@
 
 
 </div>
-  <script>
+<script>
   // load current chart package
   google.charts.load("current", {
     packages: ["corechart", "line"]
@@ -57,46 +57,47 @@
   function drawChart() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
-  //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
-  //      [1,0],
-  //      [4,2],
-  //      [2,1],
+      //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
+      //      [1,0],
+      //      [4,2],
+      //      [2,1],
       <?php
-        //-> Read from Database
-        $servername = "localhost";
-        $username = "ad";
-        $password = "Alzheimer1!";
-        $dbname = "Farmbot";
+      //-> Read from Database
+      $servername = "192.168.100.49";
+      $username = "me";
+      $password = "Alzheimer";
+      $dbname = "Farmbot";
 
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
-        if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-        }
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
 
-        $sql = "SELECT sensor, value, created_at FROM SensorDat t ORDER BY created_at desc limit 288";
-        $result = $conn->query($sql);
+      $sql = "SELECT sensor, value, created_at FROM SensorDat t ORDER BY created_at desc limit 288";
+      $result = $conn->query($sql);
 
-        echo "['Datum', 'Wert']"
+      echo "['Datum', 'Wert'],";
 
-        if ($result->num_rows > 0) {
-          $datumzahl = 0;
-          // output data of each row
-          while($row = $result->fetch_assoc()) {
-            echo "['" . $datumszahl ."'," . $row[""] . "]"
-            if($result->num_rows < ($datumszahl+1)){
-              echo ",";
-            }
-            $datumzahl = $datumszahl +1;
+      if ($result->num_rows > 0) {
+        // output data of each row
+        $datumszahl = 0;
+        while($row = $result->fetch_assoc()) {
+          echo "[$datumszahl," . $row["value"] . "]";
+          if(!$result->num_rows < ($datumszahl+1)){
+            echo ",";
+
           }
-        } else {
-          echo "0 results";
+          $datumszahl = $datumszahl +1;
         }
-        $conn->close();
+      } else {
+        echo "0 results";
+      }
+      $conn->close();
 
-      ?>;
-    ]);
+      ?>
+    ] );
     // create options object with titles, colors, etc.
     let options = {
       hAxis: {
@@ -112,9 +113,9 @@
     );
     chart.draw(data, options);
   }
-  </script>
+</script>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
