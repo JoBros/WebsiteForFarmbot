@@ -104,11 +104,11 @@
 
       curveType: 'function',
       hAxis: {
+        textPosition: 'none',
         title: "Zeit"
       },
       vAxis: {
         title: "Wert",
-        textPosition: 'none',
         minValue: 0
       }
     };
