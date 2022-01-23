@@ -21,7 +21,7 @@
 <body>
 
 <div class="topnav">
-  <a class="active" href="#status">Status</a>
+  <a class="active" href="index.php">Status</a>
   <a href="bepflanzung.php">Bepflanzung</a>
   <a href="handbetrieb.php">Handbetrieb</a>
   <a href="kontakt.php">Kontakt</a>
