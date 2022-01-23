@@ -84,7 +84,7 @@
         // output data of each row
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
-          echo "[$datumszahl," . $row["value"] . "]";
+          echo "[$created_at," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
@@ -99,6 +99,8 @@
     ] );
     // create options object with titles, colors, etc.
     let options = {
+
+      curveType: 'function',
       hAxis: {
         title: "Zeit"
       },
