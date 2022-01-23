@@ -84,7 +84,7 @@
         // output data of each row
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
-          echo "[" . $row["created_at"] . "," . $row["value"] . "]";
+          echo "[ $created_at," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
