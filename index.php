@@ -89,7 +89,7 @@
           $temp2=explode(".",$temp1[0]);
           $datumzeit=$temp2[2]."-".$temp2[1]."-".$temp2[0]." ".$temp1[1];
           $dt = strtotime($datumzeit);
-          echo "[ " . $dt . " ," . $row["value"] . "]";
+          echo "[ " . $row["created_at"]. " ," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
