@@ -56,7 +56,11 @@
 
   function drawChart() {
     // create data object with default value
-    let data = google.visualization.arrayToDataTable([
+    let data = new google.visualization.DataTable();
+    data.addColumn('datetime', 'Aufnahme der Daten');
+    data.addColumn('number', 'Wassersensor1');
+    //let data = google.visualization.arrayToDataTable([
+    data.addRows([
       //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
       //      [1,0],
       //      [4,2],
@@ -84,9 +88,7 @@
         // output data of each row
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
-          $datumzeit=$row["created_at"];
-          $dt = strtotime($datumzeit);
-          echo "[ " . $dt . " ," . $row["value"] . "]";
+          echo "[ " . $row["created_at"] . " ," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
