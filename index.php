@@ -84,7 +84,12 @@
         // output data of each row
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
-          echo "[ $created_at," . $row["value"] . "]";
+          $datumzeit=$row["$created_at"];
+          $temp1=explode(" ",$datumzeit);
+          $temp2=explode(".",$temp1[0]);
+          $datumzeit=$temp2[2]."-".$temp2[1]."-".$temp2[0]." ".$temp1[1];
+
+          echo "[ " . strtotime($datumzeit) . "," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
