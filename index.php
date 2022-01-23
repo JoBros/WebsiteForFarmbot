@@ -56,10 +56,11 @@
 
   function drawChart() {
     // create data object with default value
-    var data = new google.visualization.DataTable();
-    data.addColumn('date', 'Country');
-    data.addColumn('number', 'GDP');
-    data.addRows([
+    let data = google.visualization.arrayToDataTable([
+      //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
+      //      [1,0],
+      //      [4,2],
+      //      [2,1],
       <?php
       //-> Read from Database
       $servername = "192.168.100.49";
@@ -74,10 +75,10 @@
         die("Connection failed: " . $conn->connect_error);
       }
 
-      $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at asc limit 80"; //Zu früheren Zeiten wollten wir hier mal 288 nehmen.
+      $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at asc limit 288";
       $result = $conn->query($sql);
 
-      //echo "['Datum', 'Wassersensor'],";
+      echo "['Datum', 'Wassersensor'],";
 
       if ($result->num_rows > 0) {
         // output data of each row
@@ -85,7 +86,7 @@
         while($row = $result->fetch_assoc()) {
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
-          echo "[ " . $row["created_at"] . " ," . $row["value"] . "]";
+          echo "[ " . $dt . " ," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
@@ -104,18 +105,17 @@
       curveType: 'function',
       hAxis: {
         title: "Zeit"
+        format:'datetime'} }
       },
       vAxis: {
         title: "Wert"
       }
     };
     // draw chart on load
-    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+    let chart = new google.visualization.LineChart(
+      document.getElementById("chart_div")
+    );
     chart.draw(data, options);
-    //let chart = new google.visualization.LineChart(
-    //  document.getElementById("chart_div")
-    //);
-    //chart.draw(data, options);
   }
 </script>
 
