@@ -75,7 +75,7 @@
         die("Connection failed: " . $conn->connect_error);
       }
 
-      $sql = "SELECT sensor, value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at asc limit 288";
+      $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at asc limit 288";
       $result = $conn->query($sql);
 
       echo "['Datum', 'Wassersensor'],";
@@ -84,7 +84,7 @@
         // output data of each row
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
-          $datumzeit=$row["$created_at"];
+          $datumzeit=$row["created_at"];
           $temp1=explode(" ",$datumzeit);
           $temp2=explode(".",$temp1[0]);
           $datumzeit=$temp2[2]."-".$temp2[1]."-".$temp2[0]." ".$temp1[1];
