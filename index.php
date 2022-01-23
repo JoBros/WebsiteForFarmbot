@@ -82,7 +82,7 @@
       $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at asc limit 80"; //Zu früheren Zeiten wollten wir hier mal 288 nehmen.
       $result = $conn->query($sql);
 
-      echo "['Datum', 'Wassersensor'],";
+     // echo "['Datum', 'Wassersensor'],";
 
       if ($result->num_rows > 0) {
         // output data of each row
