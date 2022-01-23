@@ -88,8 +88,8 @@
           $temp1=explode(" ",$datumzeit);
           $temp2=explode(".",$temp1[0]);
           $datumzeit=$temp2[2]."-".$temp2[1]."-".$temp2[0]." ".$temp1[1];
-
-          echo "[ " . strtotime($datumzeit) . "," . $row["value"] . "]";
+          $dt = strtotime($datumzeit);
+          echo "[ $dt," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
