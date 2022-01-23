@@ -84,7 +84,8 @@
         // output data of each row
         $datumszahl = 1;
         while($row = $result->fetch_assoc()) {
-          echo "[$datumszahl," . $row["value"] . "]";
+          $size = $result->num_rows - $datumszahl;
+          echo "[$size," . $row["value"] . "]";
           if($result->num_rows > ($datumszahl)){
             echo ",";
           }
