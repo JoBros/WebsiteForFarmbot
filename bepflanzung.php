@@ -20,7 +20,7 @@
 <body>
 
 <div class="topnav">
-  <a href="#status">Status</a>
+  <a href="index.php">Status</a>
   <a class="active" href="bepflanzung.php">Bepflanzung</a>
   <a href="handbetrieb.php">Handbetrieb</a>
   <a href="kontakt.php">Kontakt</a>
