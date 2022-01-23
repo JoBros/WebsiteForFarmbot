@@ -82,13 +82,13 @@
 
       if ($result->num_rows > 0) {
         // output data of each row
-        $datumszahl = 1;
+        $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
           echo "[$datumszahl," . $row["value"] . "]";
           if($result->num_rows > ($datumszahl)){
             echo ",";
           }
-          $datumszahl = $datumszahl +1;
+          $datumszahl = $datumszahl -1;
         }
       } else {
         echo "0 results";
