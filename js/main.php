@@ -1,3 +1,4 @@
+<script>
   // load current chart package
   google.charts.load("current", {
     packages: ["corechart", "line"]
@@ -65,3 +66,4 @@
     );
     chart.draw(data, options);
   }
+</script>

@@ -46,11 +46,11 @@
 
 
 </div>
-<script>
 
-</script>
+<?php
+  include('js/main.js');
+?>
 
-<script src="js/main.js"></script>
 
 </body>
 
