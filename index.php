@@ -107,6 +107,7 @@
       vAxis: {
         title: "Wert"
       }
+      trendlines: { 0: {} }
     };
     // draw chart on load
     let chart = new google.visualization.LineChart(
