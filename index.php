@@ -57,7 +57,7 @@
   function drawChart() {
     // create data object with default value
     var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Country');
+    data.addColumn('date', 'Country');
     data.addColumn('number', 'GDP');
     data.addRows([
       <?php
@@ -85,7 +85,7 @@
         while($row = $result->fetch_assoc()) {
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
-          echo "[ " . $dt . " ," . $row["value"] . "]";
+          echo "[ " . $row["created_at"] . " ," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
