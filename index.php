@@ -22,10 +22,10 @@
 
 <div class="topnav">
   <a class="active" href="#status">Status</a>
-  <a href="#bepflanzung">Bepflanzung</a>
-  <a href="#handbetrieb">Handbetrieb</a>
-  <a href="#Kontakt">Kontakt</a>
-  <a href="#auskunft">Auskunft</a>
+  <a href="bepflanzung.php">Bepflanzung</a>
+  <a href="handbetrieb.php">Handbetrieb</a>
+  <a href="kontakt.php">Kontakt</a>
+  <a href="auskunft.php">Auskunft</a>
 </div>
 
 
