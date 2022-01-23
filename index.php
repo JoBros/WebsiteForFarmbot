@@ -85,7 +85,7 @@
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
           echo "[$datumszahl," . $row["value"] . "]";
-          if(1 < ($datumszahl) - 1){
+          if(0 < ($datumszahl) - 1){
             echo ",";
           }
           $datumszahl = $datumszahl -1;
