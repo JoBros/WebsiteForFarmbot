@@ -75,7 +75,7 @@
         die("Connection failed: " . $conn->connect_error);
       }
 
-      $sql = "SELECT sensor, value, created_at FROM SensorDat t ORDER BY created_at asc limit 288";
+      $sql = "SELECT sensor, value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at asc limit 288";
       $result = $conn->query($sql);
 
       echo "['Datum', 'Wassersensor'],";
