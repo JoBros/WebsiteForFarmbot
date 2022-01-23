@@ -86,7 +86,7 @@
         while($row = $result->fetch_assoc()) {
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
-          echo "[   new Date(" . substr($row["created_at"], 0, -15) . " ) , ". $row["value"] ." ]";
+          echo "[ " . $dt . " ," . $row["value"] . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
@@ -104,11 +104,11 @@
 
       curveType: 'function',
       hAxis: {
-        title: "Zeit",
-        format:"datetime"
+        title: "Zeit"
       },
       vAxis: {
-        title: "Wert"
+        title: "Wert",
+        minValue: 0
       }
     };
     // draw chart on load
