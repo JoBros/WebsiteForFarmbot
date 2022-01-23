@@ -108,6 +108,7 @@
       },
       vAxis: {
         title: "Wert",
+        textPosition: 'none',
         minValue: 0
       }
     };
