@@ -105,7 +105,7 @@
       curveType: 'function',
       hAxis: {
         title: "Zeit",
-        format:'datetime' }
+        format:"datetime"
       },
       vAxis: {
         title: "Wert"
