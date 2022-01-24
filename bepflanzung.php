@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+<h1 style="background-color: #333; font-family: Arial, Helvetica, sans-serif; padding: 15px; margin: 0px; color: white">Farmbotsteuerung</h1>
 <div class="topnav">
   <a href="index.php">Status</a>
   <a class="active" href="bepflanzung.php">Bepflanzung</a>
