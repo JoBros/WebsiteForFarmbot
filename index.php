@@ -31,19 +31,19 @@
 
 
 <div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
+  <h2>Wassersensorik </h2>
 
-  <div style="min-width:30%; min-height: 100%" id="chart_div"></div>
+  <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
+  <p>Hier wird der aktuelle Wasserwert angezeigt, wobei rechts der aktuelle Wasserwert angezeigt wird, und über den Graphen der Trend angenommen werden kann. </p>
 
+  <h2>Temperatursensorik</h2>
 
-  <!-- Tabelle -->
-  <table>
-    <tr><th> Inhaltsüberschrift 1 </th> <th> Inhaltsüberschrift 4 </th></tr>
-    <tr><td> Inhalt 2 </td> <td> Inhalt 5 </td></tr>
-    <tr><td> Inhalt 3 </td> <td> Inhalt 6 </td></tr>
-  </table>
+  <div style="min-width:30%; min-height: 30%" id="chart_div2"></div>
 
+  <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
+
+  <div style="min-width:30%; min-height: 30%" id="chart_div3"></div>
 
 </div>
 <script>
