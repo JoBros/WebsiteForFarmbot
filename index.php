@@ -19,6 +19,7 @@
 </head>
 
 <body>
+<h1 style="background-color: black; font-family: Arial, Helvetica, sans-serif;">Farmbotsteuerung</h1>
 
 <div class="topnav">
   <a class="active" href="index.php">Status</a>
