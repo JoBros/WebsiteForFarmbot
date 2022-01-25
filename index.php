@@ -142,7 +142,7 @@
       $sql = "SELECT value, created_at FROM SensorDat t where sensor='TP_1' ORDER BY created_at desc limit 288";
       $result = $conn->query($sql);
 
-      echo "['Datum', 'Wassersensor'],";
+      echo "['Datum', 'Temperatursensor'],";
 
       if ($result->num_rows > 0) {
         // output data of each row
@@ -191,7 +191,7 @@
       $sql = "SELECT value, created_at FROM SensorDat t where sensor='LF_1' ORDER BY created_at desc limit 288";
       $result = $conn->query($sql);
 
-      echo "['Datum', 'Wassersensor'],";
+      echo "['Datum', 'Luftfeuchtesensor'],";
 
       if ($result->num_rows > 0) {
         // output data of each row
