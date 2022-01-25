@@ -122,9 +122,6 @@
   }
 
   //zweites Diagramm
-  google.charts.load("current", {
-    packages: ["corechart", "line"]
-  });
   // set callback function when api loaded
   google.charts.setOnLoadCallback(drawChart2);
 
