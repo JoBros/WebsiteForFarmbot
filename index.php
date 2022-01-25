@@ -287,7 +287,7 @@
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      echo "document.getElementById('bwW').innerHTML = " . $result["value"] .";";
+      echo "document.getElementById('bwW').innerHTML = '" . $result["value"] ."';";
     }
   } else {
     echo "document.getElementById('bwW').innerHTML = 'Kein Eintrag vorhanden';";
