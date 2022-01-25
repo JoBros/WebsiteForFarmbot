@@ -128,9 +128,9 @@
     packages: ["corechart", "line"]
   });
   // set callback function when api loaded
-  google.charts.setOnLoadCallback(drawChart);
+  google.charts.setOnLoadCallback(drawChart2);
 
-  function drawChart() {
+  function drawChart2() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
       //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
@@ -201,9 +201,9 @@
     packages: ["corechart", "line"]
   });
   // set callback function when api loaded
-  google.charts.setOnLoadCallback(drawChart);
+  google.charts.setOnLoadCallback(drawChart2);
 
-  function drawChart() {
+  function drawChart2() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
       //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
