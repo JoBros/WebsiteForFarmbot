@@ -281,7 +281,7 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "SELECT value FROM SensorDat t where sensor='WA_1' order by id desc limit 1";
+  $sql = "SELECT value FROM SensorDat t where sensor='WS_1' order by id desc limit 1";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
