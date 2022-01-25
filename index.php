@@ -54,8 +54,8 @@
     packages: ["corechart", "line"]
   });
   // set callback function when api loaded
-  google.charts.setOnLoadCallback(drawChart);
-
+  //google.charts.setOnLoadCallback(drawChart);
+  drawChart()
   function drawChart() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
