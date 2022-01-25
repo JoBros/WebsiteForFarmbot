@@ -177,8 +177,7 @@
 
       ?>
     ] );
-    document.getElementbyID("bwW").innerHTML = "Hallo";
-    // create options object with titles, colors, etc.
+
     let options = {
 
       curveType: 'function',
@@ -197,9 +196,6 @@
     );
     chart.draw(data, options);
   }
-</script>
-
-<script>
   // load current chart package
   google.charts.load("current", {
     packages: ["corechart", "line"]
@@ -271,6 +267,35 @@
     );
     chart.draw(data, options);
   }
+  <?php
+  //-> Read from Database
+  $servername = "192.168.100.49";
+  $username = "me";
+  $password = "Alzheimer";
+  $dbname = "Farmbot";
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  $sql = "SELECT last(value) FROM SensorDat t where sensor='WA_1'";
+  $result = $conn->query($sql);
+
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      echo "document.getElementbyID('bwW').innerHTML = " . $result["value"];
+    }
+  } else {
+    echo "document.getElementbyID('bwW').innerHTML = 'Kein Eintrag vorhanden'";
+  }
+  $conn->close();
+
+  ?>
+
 </script>
 
 
