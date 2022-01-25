@@ -177,7 +177,7 @@
 
       ?>
     ] );
-    document.getElementbyID("bwW").text = "Hallo";
+    document.getElementbyID("bwW").innerText = "Hallo";
     // create options object with titles, colors, etc.
     let options = {
 
