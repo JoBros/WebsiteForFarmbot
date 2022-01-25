@@ -128,9 +128,9 @@
     packages: ["corechart", "line"]
   });
   // set callback function when api loaded
-  google.charts.setOnLoadCallback(drawChart2);
+  google.charts.setOnLoadCallback(drawChart1);
 
-  function drawChart2() {
+  function drawChart1() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
       //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
@@ -197,9 +197,6 @@
     chart.draw(data, options);
   }
   // load current chart package
-  google.charts.load("current", {
-    packages: ["corechart", "line"]
-  });
   // set callback function when api loaded
   google.charts.setOnLoadCallback(drawChart2);
 
