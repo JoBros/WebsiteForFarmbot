@@ -116,7 +116,7 @@
     };
     // draw chart on load
     let chart = new google.visualization.LineChart(
-      document.getElementById("chart_div")
+      document.getElementById("chart_div0")
     );
     chart.draw(data, options);
   }
