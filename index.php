@@ -34,7 +34,7 @@
 <div style="padding-left:16px">
   <h2>Wassersensorik </h2>
 
-  <div style="min-width:30%; min-height: 30%" id="chart_div0"></div>
+  <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
   <p>Hier wird der aktuelle Wasserwert angezeigt, wobei rechts der aktuelle Wasserwert angezeigt wird, und über den Graphen der Trend angenommen werden kann. </p>
   <h3>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></h3>
@@ -54,8 +54,8 @@
     packages: ["corechart", "line"]
   });
   // set callback function when api loaded
-  //google.charts.setOnLoadCallback(drawChart);
-  drawChart()
+  google.charts.setOnLoadCallback(drawChart);
+
   function drawChart() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
@@ -116,18 +116,60 @@
     };
     // draw chart on load
     let chart = new google.visualization.LineChart(
-      document.getElementById("chart_div0")
+      document.getElementById("chart_div")
     );
     chart.draw(data, options);
-  }
 
-  //zweites Diagramm
-  // set callback function when api loaded
-  google.charts.setOnLoadCallback(drawChart2);
+    data = google.visualization.arrayToDataTable([
+      //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
+      //      [1,0],
+      //      [4,2],
+      //      [2,1],
+      <?php
+      //-> Read from Database
+      $servername = "192.168.100.49";
+      $username = "me";
+      $password = "Alzheimer";
+      $dbname = "Farmbot";
 
-  function drawChart2() {
-    // create data object with default value
-    let data = google.visualization.arrayToDataTable([
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+      $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at desc limit 288";
+      $result = $conn->query($sql);
+
+      echo "['Datum', 'Wassersensor'],";
+
+      if ($result->num_rows > 0) {
+        // output data of each row
+        $datumszahl = $result->num_rows;
+        while($row = $result->fetch_assoc()) {
+          $datumzeit=$row["created_at"];
+          $dt = strtotime($datumzeit);
+          echo "[ " . $dt . " ," . $row["value"] . "]";
+          if(0 < ($datumszahl) - 1){
+            echo ",";
+          }
+          $datumszahl = $datumszahl -1;
+        }
+      } else {
+        echo "0 results";
+      }
+      $conn->close();
+
+      ?>
+    ] );
+    // draw chart on load
+    chart = new google.visualization.LineChart(
+      document.getElementById("chart_div1")
+    );
+    chart.draw(data, options);
+
+    data = google.visualization.arrayToDataTable([
       //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
       //      [1,0],
       //      [4,2],
@@ -171,23 +213,14 @@
       ?>
     ] );
     // create options object with titles, colors, etc.
-    let options = {
 
-      curveType: 'function',
-      hAxis: {
-        textPosition: 'none',
-        title: "Zeit"
-      },
-      vAxis: {
-        title: "Wert",
-        minValue: 0
-      }
-    };
+
     // draw chart on load
-    let chart = new google.visualization.LineChart(
+    chart = new google.visualization.LineChart(
       document.getElementById("chart_div2")
     );
     chart.draw(data, options);
+
   }
 </script>
 
