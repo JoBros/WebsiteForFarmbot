@@ -128,9 +128,9 @@
     packages: ["corechart", "line"]
   });
   // set callback function when api loaded
-  google.charts.setOnLoadCallback(drawChart1);
+  google.charts.setOnLoadCallback(drawChart);
 
-  function drawChart1() {
+  function drawChart() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
       //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
@@ -177,7 +177,7 @@
 
       ?>
     ] );
-
+    // create options object with titles, colors, etc.
     let options = {
 
       curveType: 'function',
@@ -196,11 +196,17 @@
     );
     chart.draw(data, options);
   }
-  // load current chart package
-  // set callback function when api loaded
-  google.charts.setOnLoadCallback(drawChart2);
+</script>
 
-  function drawChart2() {
+<script>
+  // load current chart package
+  google.charts.load("current", {
+    packages: ["corechart", "line"]
+  });
+  // set callback function when api loaded
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
     // create data object with default value
     let data = google.visualization.arrayToDataTable([
       //    ["Datenreihe1" , "Feuchtigkeit [in %]?"],
@@ -264,36 +270,6 @@
     );
     chart.draw(data, options);
   }
-  <?php
-  //-> Read from Database
-  $servername = "192.168.100.49";
-  $username = "me";
-  $password = "Alzheimer";
-  $dbname = "Farmbot";
-
-  // Create connection
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  // Check connection
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-
-  $sql = "SELECT value FROM SensorDat t where sensor='WS_1' order by id desc limit 1";
-  $result = $conn->query($sql);
-
-  if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-      echo "document.getElementById('bwW').innerHTML = '" . $result["value"] ."';";
-    }
-  } else {
-    echo "document.getElementById('bwW').innerHTML = 'Kein Eintrag vorhanden';";
-  }
-  $conn->close();
-
-  ?>
-
-
 </script>
 
 
