@@ -252,7 +252,7 @@
   $conn->close();
 
   ?>
-  document.getElementById("bwW").innerText = "fünf";
+
 </script>
 
 
