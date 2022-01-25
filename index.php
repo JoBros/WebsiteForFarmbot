@@ -37,6 +37,7 @@
   <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
   <p>Hier wird der aktuelle Wasserwert angezeigt, wobei rechts der aktuelle Wasserwert angezeigt wird, und über den Graphen der Trend angenommen werden kann. </p>
+  <h3>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></h3>
 
   <h2>Temperatursensorik</h2>
 
@@ -170,10 +171,13 @@
       } else {
         echo "0 results";
       }
+
+
       $conn->close();
 
       ?>
     ] );
+    document.getElementbyID("bwW").text = "Hallo";
     // create options object with titles, colors, etc.
     let options = {
 
