@@ -78,21 +78,17 @@
     </td>
   </tr>
 </table>
-<div class="rechts">
-  <Button id="wasserbtn" style="background-color: dodgerblue; color: white; height: 4em; width: 6em;">
+<div>
+  <Button class="anzeigeStatus" id="wasserbtn" style="background-color: dodgerblue; color: white; height: 4em; width: 6em;">
     Wasser
   </Button>
-  <input id="_waternumber" style="height: 3em; width: 6em;" type="number" disabled="true"/><Label
-    style="height: 4em; width: 6em;">%
-    Wasser</Label>
+  <input class="anzeigeStatus" id="_waternumber" style="height: 3em; width: 6em;" type="number" disabled="true"/><Label style="height: 4em; width: 6em;">% Wasser</Label>
   <br>
-  <Button id="hakbtn" style="height: 4em; width: 6em;">Harke</Button>
-  <input disabled="true" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Harken
-    ausgeführt!</Label>
+  <Button class="anzeigeStatus" id="hakbtn" style="height: 4em; width: 6em;">Harke</Button>
+  <input class="anzeigeStatus" disabled="true" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Harken ausgeführt!</Label>
   <br>
-  <Button id="saatbtn" style="height: 4em; width: 6em;">Saat</Button>
-  <input id="frucht" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Saat
-    ausgeführt!</Label>
+  <Button class="anzeigeStatus" id="saatbtn" style="height: 4em; width: 6em;">Saat</Button>
+  <input class="anzeigeStatus" id="frucht" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Saat ausgeführt!</Label>
 </div>
 </div>
 <script src="js/main.js"></script>
