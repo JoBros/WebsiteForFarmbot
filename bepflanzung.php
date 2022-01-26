@@ -40,7 +40,7 @@ if (mysqli_connect_errno())
 {
     echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
 }
-$result = mysqli_query($connection, "SELECT * FROM .tbl_name")or die("Error: " . mysqli_error($connection));
+$result = mysqli_query($connection, "SELECT * FROM PflanzenPos")or die("Error: " . mysqli_error($connection));
 $num_rows=mysqli_num_rows($result);
 $rows =  $num_rows/3;
 
