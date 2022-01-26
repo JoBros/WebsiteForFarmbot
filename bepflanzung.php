@@ -52,7 +52,7 @@
       //Gebe Daten Tabellarisch aus.
       for($i=1; $i<=$tbl_length; $i++)
       {
-          echo "<tr>"'"<th id="Spalte1"'>Milch</th>";
+          echo "<tr>""<th>Milch</th>";
           for($j=1; $j<=$tbl_width; $j++)
           {
             echo"<td id='$i.$j'> Inhalt $i $j</td>";
