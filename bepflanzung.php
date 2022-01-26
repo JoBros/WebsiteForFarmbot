@@ -27,50 +27,7 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
-<table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="white">
-<?php
-//Connection Data
-  $servername = "192.168.100.49";
-  $username = "me";
-  $password = "Alzheimer";
-  $dbname = "Farmbot";
-  $tbl_name="PflanzenPos";
 
-  $tbl_width="6";
-  $tbl_length="11";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-//Lade Daten
-$sql = "SELECT * FROM PflanzenPos";
-//$sql = "SELECT t.* FROM PflanzenPos t";
-    $result = $conn->query($sql);
-    //Gebe Daten Tabellarisch aus.
-    for($i=1; $i<=$tbl_length; $i++)
-    {
-        echo "<tr>";
-        for($j=1; $j<=$tbl_width; $j++)
-        {
-          echo"<td id=" . $i . ".". $j"> Inhalt $i $j</td>";
-        }
-        echo "</tr>";
-    }
-
-    if ($result->num_rows > 0) {
-      // output data of each row
-      while ($row = $result->fetch_assoc()) {
-         echo "document.getElementById(" . $row["x"] . "." . $row["x"] . ").innerHTML = '" . $row["bez"] . "';";
-      }
-    } else {
-      echo "Kein Wert verfügbar";
-    }
-
-  $conn->close();
-?>
-</table>
 
 <script src="js/main.js"></script>
 
