@@ -35,7 +35,7 @@
   <p>Hier wird der aktuelle Sensorenwerte und die letzten Fahrbewegungen des Farmbots angezeigt. Das Fenster dient zur Anzeige für den Gärtner um Trends und aktuelle Bedürfnisse zu erkennen. </p>
   <h2>Wassersensorik </h2>
 
-  <div style="min-width:30%; min-height:30%; max-width: 50%" id="chart_div"></div>
+  <div style="min-width:30%; min-height:30%; max-width: 80%" id="chart_div"></div>
 
   <p>Der aktuelle Bodenwasserwert liegt bei: <Label id="bwW" style="text-underline: #04AA6D; color: darkcyan"></Label> von 1024</p>
 
