@@ -61,15 +61,15 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
 
         for($j=0; $j<=$tbl_width; $j++) {
           if($i==0  && $j == 0){
-             echo "<th class='beet'> X- / Y- Richtung</th>";
+             echo "<th class='anzeigeStatus'> X- / Y- Richtung</th>";
           }
           else if($i==0){
-             echo "<th class='beet'>$j</th>";
+             echo "<th class='anzeigeStatus'>$j</th>";
           }
           else if($j == 0){
-             echo "<th class='beet'>$i</th>";
+             echo "<th class='anzeigeStatus'>$i</th>";
           } else{
-            echo"<td id='$i.$j' class='beet'> <img src='top-view-soil.jpg' width='80px' height='80px'></td>";
+            echo"<td id='$i.$j' class='anzeigeStatus'> <img src='top-view-soil.jpg' width='80px' height='80px'></td>";
           }
         }
           echo "</tr>";
