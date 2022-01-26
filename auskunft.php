@@ -27,6 +27,7 @@
   <a class="active" href="auskunft.php">Auskunft</a>
 </div>
 
+<h1> Willkommen auf der Auskunfsseite zum Farmbot</h1>
 
 <script src="js/main.js"></script>
 
