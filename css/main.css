@@ -47,7 +47,7 @@ tr.anzeigeStatus{
 th.anzeigeStatus{
   height: 3em;
   color: white;
-  background: darkgreen;
+  background: #333;
   box-sizing: border-box;
   border-radius: 4px;
 }
