@@ -75,7 +75,7 @@
     if ($result->num_rows > 0) {
       // output data of each row
       while ($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["x"] . "</td><td>". $row["y"] . "</td><td>" . $row["doing"] ."</td><td>" . $row["timest"] . "</td></tr>";
+        echo "<tr class='anzeigeStatus'><td class='anzeigeStatus'>" . $row["x"] . "</td><td class='anzeigeStatus'>". $row["y"] . "</td><td class='anzeigeStatus'>" . $row["doing"] ."</td><td class='anzeigeStatus'>" . $row["timest"] . "</td></tr>";
       }
     } else {
       echo "Kein Wert verfügbar";
