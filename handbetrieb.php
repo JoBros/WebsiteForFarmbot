@@ -29,8 +29,7 @@
 
 <h2>Handbetriebsseite zum Farmbot</h2>
 <p>Auf dieser Seite kann alles gefunden werden, was zum manuellen Steuern des Farmbots nötig ist. Auf dieser Seite ist es möglich das Gehäuse in X, Y, und Z Richtung zu bewegen. Auch die Gießbewegung und die Wässerungsfunktion kann hier genutzt werden. Ebenso kann der Workflow zum Sähen seine Einleitung finden. </p>
-<center>
-<div>
+<div style="align-content: center;">
 <table class="links">
   <tr>
     <td class="anzeigeStatus" style="visibility: hidden"></td>
@@ -69,9 +68,8 @@
             ausgeführt!</Label>
         </div>
 </div>
-</center>
   <script src="js/main.js"></script>
-<script src="js/WebsocketControl.js"></script>
+  <script src="js/WebsocketControl.js"></script>
 </body>
 
 </html>
