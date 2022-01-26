@@ -28,13 +28,26 @@ body {
   color: white;
 }
 
+div.anzeigeStatus{
+  width: 100%;
+  height: auto;
+  align-content: center;
+}
+
+table.anzeigeStatus{
+  overflow: scroll;
+  height: 5%;
+}
+
 tr.anzeigeStatus{
-  background: #04AA6D;
+
 }
 
 td.anzeigeStatus{
-  paddin: 12px;
-  margin: 8px;
+  height: 3em;
+  color: white;
+  padding: 20px;
+  margin: 30px;
   background:coral;
   box-sizing: border-box;
   border-radius: 3px 15px 5px 30px;
