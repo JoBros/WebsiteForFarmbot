@@ -26,48 +26,46 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
-
+<center>
+<table style="background-color: #cccccc; clear: both">
+  <tr>
+    <th><br></th>
+    <th>
+      <Button id="A">x ></Button>
+    </th>
+    <th><br></th>
+  </tr>
+  <tr>
+    <td>
+      <Button id="W">y <</Button>
+    </td>
+    <td><br></td>
+    <td>
+      <Button id="S">y ></Button>
+    </td>
+  </tr>
+  <tr>
+    <td><br></td>
+    <td>
+      <Button id="D">x <</Button>
+    </td>
+    <td><br></td>
+  </tr>
+  <tr>
+    <td>
+      <Button id="Q">z <</Button>
+    </td>
+    <td><br></td>
+    <td>
+      <Button id="E">z ></Button>
+    </td>
+  </tr>
+</table>
+</center>
 <div id="handcontrol" style="width: auto; margin: 2%; padding: 2%; background-color: whitesmoke; min-width: 38em; ">
   <div style="margin-right: 10%; margin-top: 1%; padding-top: 1%; float: right; border: 1px black; clear: revert; ">
     <table style="align-items: center; align-content: center; background-color: lightgrey">
-      <tr>
-        <th style="align-content: center; align-items: center; align-self: center;" align="center" valign="center">
-          <table style="background-color: #cccccc; clear: both">
-            <tr>
-              <th><br></th>
-              <th>
-                <Button id="A">x ></Button>
-              </th>
-              <th><br></th>
-            </tr>
-            <tr>
-              <td>
-                <Button id="W">y <</Button>
-              </td>
-              <td><br></td>
-              <td>
-                <Button id="S">y ></Button>
-              </td>
-            </tr>
-            <tr>
-              <td><br></td>
-              <td>
-                <Button id="D">x <</Button>
-              </td>
-              <td><br></td>
-            </tr>
-            <tr>
-              <td>
-                <Button id="Q">z <</Button>
-              </td>
-              <td><br></td>
-              <td>
-                <Button id="E">z ></Button>
-              </td>
-            </tr>
-          </table>
-        </th>
-      </tr>
+
 
       <tr>
         <th>
