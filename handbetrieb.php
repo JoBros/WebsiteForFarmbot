@@ -33,23 +33,23 @@
 <table class="links">
   <tr>
     <th class="anzeigeStatus" style="visibility: hidden"></th>
-    <th class="anzeigeStatus"><center><Button id="A">x ></Button></center></th>
+    <th class="anzeigeStatus"><center><Button id="A" class="anzeigeStatus">x ></Button></center></th>
     <th class="anzeigeStatus" style="visibility: hidden"></th>
   </tr>
   <tr>
-    <td class="anzeigeStatus"><center><Button id="W">y <</Button></center></td>
+    <td class="anzeigeStatus"><center><Button id="W" class="anzeigeStatus">y <</Button></center></td>
     <td class="anzeigeStatus" style="visibility: hidden"></td>
-    <td class="anzeigeStatus"><center><Button id="S">y ></Button></center></td>
+    <td class="anzeigeStatus"><center><Button id="S" class="anzeigeStatus">y ></Button></center></td>
   </tr>
   <tr>
     <td class="anzeigeStatus" style="visibility: hidden"></td>
-    <td class="anzeigeStatus"><center><Button id="D">x <</Button></center></td>
+    <td class="anzeigeStatus"><center><Button id="D" class="anzeigeStatus">x <</Button></center></td>
     <td class="anzeigeStatus" style="visibility: hidden"></td>
   </tr>
   <tr>
-    <td class="anzeigeStatus"><center><Button id="Q">z <</Button></center></td>
+    <td class="anzeigeStatus"><center><Button id="Q" class="anzeigeStatus">z <</Button></center></td>
     <td class="anzeigeStatus" style="visibility: hidden"></td>
-    <td class="anzeigeStatus"><center><Button id="E">z ></Button></center></td>
+    <td class="anzeigeStatus"><center><Button id="E" class="anzeigeStatus">z ></Button></center></td>
   </tr>
 </table>
         <div class="rechts">
