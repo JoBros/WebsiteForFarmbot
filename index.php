@@ -269,7 +269,7 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "SELECT value FROM SensorDat t where sensor='TP_1' ORDER BY created_at desc limit 1";
+  $sql = "SELECT value FROM SensorDat t where sensor='LF_1' ORDER BY created_at desc limit 1";
   $result = $conn->query($sql);
 
 
@@ -297,7 +297,7 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "SELECT value FROM SensorDat t where sensor='LF_1' ORDER BY created_at desc limit 1";
+  $sql = "SELECT value FROM SensorDat t where sensor='TP_1' ORDER BY created_at desc limit 1";
   $result = $conn->query($sql);
 
 
