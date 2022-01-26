@@ -243,7 +243,7 @@
     // output data of each row
     $datumszahl = $result->num_rows;
     while($row = $result->fetch_assoc()) {
-      echo "document.getElementById('bwW').innerText = '". $row["value"] . "']";
+      echo "document.getElementById('bwW').innerText = '". $row["value"] . "';]";
     }
   } else {
     echo "Kein Wert verfügbar";
