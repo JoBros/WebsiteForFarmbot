@@ -85,7 +85,7 @@
 </center>
 
 <script src="js/main.js"></script>
-
+<script src="js/WebsocketControl.js"></script>
 </body>
 
 </html>
