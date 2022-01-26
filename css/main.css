@@ -62,3 +62,15 @@ td.anzeigeStatus{
   border-radius: 3px 15px 5px 30px;
 }
 
+td.beet{
+  height: 3em;
+  color: white;
+  padding: 20px;
+  margin: 30px;
+  background:darkseagreen;
+}
+
+tr.beet{
+  width: 100%;
+}
+
