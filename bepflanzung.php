@@ -27,16 +27,37 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
-<table>
- <tr>
- <td axis="Milch">Es gibt Milch mit 3,5% Fett.</td>
- <td axis="Reise">Eine Reise nach München kann lang werden.</td>
- </tr>
- <tr>
- <td axis="Reise">Eine Reise nach Köln kann schnell gehen.</td>
- <td axis="Milch">Es gibt Milch mit 1,5% Fett.</td>
- </tr>
-</table> 
+<center>
+<table border='1'>
+<?php
+$host="192.168.100.49";
+$username="me";
+$password="raspberry";
+$db_name="Farmbot";
+$tbl_name="PflanzenPos";
+$connection=mysqli_connect("$host","$username","$password","$db_name");
+if (mysqli_connect_errno())
+{
+    echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
+}
+$result = mysqli_query($connection, "SELECT * FROM .tbl_name")or die("Error: " . mysqli_error($connection));
+$num_rows=mysqli_num_rows($result);
+$rows =  $num_rows/3;
+
+for($i=1; $i<=$rows ; $i++)
+{
+    echo "<tr>";
+    for($j=1; $j<=3; $j++)
+    {
+      echo"<td> Inhalt $i $j</td>";
+    }
+    echo "</tr>";
+}
+
+mysqli_close($connection);
+?>
+</table>
+</center>
 
 <script src="js/main.js"></script>
 
