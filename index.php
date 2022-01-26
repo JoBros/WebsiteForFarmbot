@@ -54,11 +54,9 @@
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
 
   <table>
-    <tr>
-      <td>Inhalt</td>
-      <td>Inhalt2</td>
-      <td>inhalt3</td>
-    </tr>
+    <tr><td>Inhalt</td></tr>
+    <tr><td>Inhalt2</td></tr>
+    <tr><td>inhalt3</td></tr>
   </table>
 
 </div>
