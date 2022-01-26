@@ -36,7 +36,7 @@ div.anzeigeStatus{
 
 table.anzeigeStatus{
   overflow: scroll;
-  height: 10%;
+  height: 5%;
 }
 
 tr.anzeigeStatus{
@@ -44,6 +44,7 @@ tr.anzeigeStatus{
 }
 
 td.anzeigeStatus{
+  height: 3em;
   color: white;
   padding: 20px;
   margin: 30px;
