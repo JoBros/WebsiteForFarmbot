@@ -53,6 +53,14 @@
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
 
+  <table>
+    <tr>
+      <td>Inhalt</td>
+      <td>Inhalt2</td>
+      <td>inhalt3</td>
+    </tr>
+  </table>
+
 </div>
 <script>
   // load current chart package
@@ -313,6 +321,9 @@
   $conn->close();
   ?>
 </script>
+
+
+
 <script src="js/main.js"></script>
 
 </body>
