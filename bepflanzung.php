@@ -27,7 +27,17 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 <table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="white">
+<?php
+//Connection Data
+  $servername = "192.168.100.49";
+  $username = "me";
+  $password = "Alzheimer";
+  $dbname = "Farmbot";
+  $tbl_name="PflanzenPos";
 
+  $tbl_width="6";
+  $tbl_length="11";
+?>
 </table>
 <script src="js/main.js"></script>
 
