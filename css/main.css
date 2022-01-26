@@ -62,29 +62,6 @@ td.anzeigeStatus{
   border-radius: 3px 15px 5px 30px;
 }
 
-td.beet{
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 3em;
-  color: white;
-  padding: 90px;
-  margin: 90px;
-}
-
-th.beet{
-  box-sizing: border-box;
-
-  border-radius: 4px;
-  height: 3em;
-  color: white;
-  padding: 20px;
-  margin: 30px;
-}
-
-tr.beet{
-  width: 100%;
-}
-
 .links {
   float: left;
   width: 300px;
