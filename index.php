@@ -37,11 +37,13 @@
 
   <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
-  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></p>
+  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW" style="text-underline: #04AA6D"></Label></p>
 
   <h2>Temperatursensorik</h2>
 
   <div style="min-width:30%; min-height: 30%" id="chart_div1"></div>
+
+  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW" style="text-underline: #04AA6D"></Label></p>
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
 
@@ -235,7 +237,7 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-  $sql = "SELECT Last(value) FROM SensorDat t where sensor='WS_1' ORDER BY created_at desc limit 288";
+  $sql = "SELECT value FROM SensorDat t where sensor='WS_1' ORDER BY created_at desc limit 1";
   $result = $conn->query($sql);
 
 
@@ -243,7 +245,7 @@
     // output data of each row
     $datumszahl = $result->num_rows;
     while($row = $result->fetch_assoc()) {
-      echo "document.getElementById('bwW').innerText = '". $row["value"] . "']";
+      echo "document.getElementById('bwW').innerText = '". $row["value"] . "';";
     }
   } else {
     echo "Kein Wert verfügbar";
