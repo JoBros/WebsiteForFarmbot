@@ -37,19 +37,19 @@
 
   <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
-  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW" style="text-underline: #04AA6D; color: darkcyan"></Label></p>
+  <p>Der aktuelle Bodenwasserwert liegt bei: <Label id="bwW" style="text-underline: #04AA6D; color: darkcyan"></Label> von 1024</p>
 
   <h2>Temperatursensorik</h2>
 
   <div style="min-width:30%; min-height: 30%" id="chart_div1"></div>
 
-  <p>Der aktuelle Temperaturwert liegt bei <Label id="bwT" style="text-underline: #04AA6D; color: darkcyan;"></Label></p>
+  <p>Der aktuelle Temperaturwert liegt bei: <Label id="bwT" style="text-underline: #04AA6D; color: darkcyan;"> °C</Label></p>
 
   <h2>Luftfeuchtigkeitsverlauf</h2>
 
   <div style="min-width:30%; min-height: 30%" id="chart_div2"></div>
 
-  <p>Der aktuelle Temperaturwert liegt bei <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label></p>
+  <p>Der aktuelle Luftfeuchtewert liegt bei: <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"> %</Label></p>
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
   <div class="anzeigeStatus">
