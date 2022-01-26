@@ -63,6 +63,7 @@ td.anzeigeStatus{
 }
 
 td.beet{
+  box-sizing: border-box;
   height: 3em;
   color: white;
   padding: 90px;
@@ -70,6 +71,7 @@ td.beet{
 }
 
 th.beet{
+  box-sizing: border-box;
   height: 3em;
   color: white;
   padding: 20px;
