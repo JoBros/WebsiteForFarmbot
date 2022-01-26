@@ -37,11 +37,13 @@
 
   <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
-  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></p>
+  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW" style="text-underline: #04AA6D"></Label></p>
 
   <h2>Temperatursensorik</h2>
 
   <div style="min-width:30%; min-height: 30%" id="chart_div1"></div>
+
+  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW" style="text-underline: #04AA6D"></Label></p>
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
 
