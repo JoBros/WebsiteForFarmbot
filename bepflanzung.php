@@ -26,41 +26,53 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
-
-<center>
-Positionstabelle:
-<table border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="grey">
+<table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="white">
 <?php
-$host="192.168.100.49";
-$username="me";
-$password="Alzheimer";
-$db_name="Farmbot";
-$tbl_name="PflanzenPos";
-$tbl_width="6";
-$tbl_length="11";
-$connection=mysqli_connect("$host","$username","$password","$db_name");
-if (mysqli_connect_errno())
-{
-    echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
-}
-$result = mysqli_query($connection, "SELECT * FROM PflanzenPos")or die("Error: " . mysqli_error($connection));
-$num_rows=mysqli_num_rows($result);
+//Connection Data
+  $servername = "192.168.100.49";
+  $username = "me";
+  $password = "Alzheimer";
+  $dbname = "Farmbot";
+  $tbl_name="PflanzenPos";
 
-for($i=1; $i<=$tbl_length; $i++)
-{
-    echo "<tr>";
-    for($j=1; $j<=$tbl_width; $j++)
-    {
-      echo"<td> Inhalt $i $j</td>";
-    }
-    echo "</tr>";
-}
+  $tbl_width=6;
+  $tbl_length=11;
 
-mysqli_close($connection);
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  //Lade Daten
+  $sql = "SELECT * FROM PflanzenPos";
+  //$sql = "SELECT t.* FROM PflanzenPos t";
+      $result = $conn->query($sql);
+      //Gebe Daten Tabellarisch aus.
+      for($i=1; $i<=$tbl_length; $i++)
+      {
+          echo "<tr>";
+          for($j=1; $j<=$tbl_width; $j++)
+          {
+            echo"<td id='$i.$j'> Inhalt $i $j</td>";
+          }
+          echo "</tr>";
+      }
+      if ($result->num_rows > 0) {
+        // output data of each row
+        echo "<script>";
+        while ($row = $result->fetch_assoc()) {
+           echo "document.getElementById('" . $row["x"] . "." . $row["x"] . "').innerHTML = '" . $row["bez"] . "';";
+        } echo "</script>";
+      } else {
+        echo "Kein Wert verfügbar";
+      }
+
+
+    $conn->close();
 ?>
 </table>
-</center>
-
 <script src="js/main.js"></script>
 
 </body>

@@ -30,24 +30,34 @@ body {
 
 div.anzeigeStatus{
   width: 100%;
-  height: auto;
+  height: 5em;
   align-content: center;
 }
 
 table.anzeigeStatus{
+  width: 100%;
   overflow: scroll;
-  height: 10%;
+  height: 5%;
 }
 
 tr.anzeigeStatus{
+  width: 100%;
+}
 
+th.anzeigeStatus{
+  height: 3em;
+  color: white;
+  background: darkgreen;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 td.anzeigeStatus{
+  height: 3em;
   color: white;
   padding: 20px;
   margin: 30px;
-  background:coral;
+  background:darkseagreen;
   box-sizing: border-box;
   border-radius: 3px 15px 5px 30px;
 }
