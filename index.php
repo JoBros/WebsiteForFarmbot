@@ -120,7 +120,7 @@
       $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at desc limit 120";
       $result = $conn->query($sql);
 
-      echo "['Datum', 'Wassersensor'],";
+      echo "['Datum', 'WS_1'],";
 
       if ($result->num_rows > 0) {
         // output data of each row
