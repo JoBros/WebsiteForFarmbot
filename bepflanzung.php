@@ -27,10 +27,11 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
+//Tabelle mit den Positionsdaten ausgeben:
 <center>
 Positionstabelle:
 
-<table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="grey">
+<table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="white">
 <?php
 //Connection Data
 $host="192.168.100.49";
@@ -41,14 +42,16 @@ $tbl_name="PflanzenPos";
 
 $tbl_width="6";
 $tbl_length="11";
-$conn=mysqli_connect("$host","$username","$password","$db_name");
-if (mysqli_connect_errno())
-{
-    echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
-
+//Lade Daten
 $sql = "SELECT t.* FROM PflanzenPos";
     $result = $conn->query($sql);
+    //Gebe Daten Tabellarisch aus.
     for($i=1; $i<=$tbl_length; $i++)
     {
         echo "<tr>";
@@ -68,8 +71,7 @@ $sql = "SELECT t.* FROM PflanzenPos";
       echo "Kein Wert verfügbar";
     }
 
-
-mysqli_close($conn);
+  $conn->close();
 ?>
 </table>
 </center>
