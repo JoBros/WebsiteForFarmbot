@@ -32,13 +32,13 @@
 
 <table class="links">
   <tr>
-    <th class="anzeigeStatus"></th>
+    <th class="anzeigeStatus" visible="false"></th>
     <th class="anzeigeStatus"><center><Button id="A">x ></Button></center></th>
-    <th class="anzeigeStatus"></th>
+    <th class="anzeigeStatus" visible="false"></th>
   </tr>
   <tr>
     <td class="anzeigeStatus"><center><Button id="W">y <</Button></center></td>
-    <td class="anzeigeStatus"></td>
+    <td class="anzeigeStatus" visible="false"></td>
     <td class="anzeigeStatus"><center><Button id="S">y ></Button></center></td>
   </tr>
   <tr>
