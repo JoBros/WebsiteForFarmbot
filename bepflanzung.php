@@ -54,7 +54,7 @@ In der nahestehenden Tabelle sind die vorhandenen Pflanzen aufgeführt.
       $result = $conn->query($sql);
       //Gebe Daten Tabellarisch aus.
       for($i=0; $i<=$tbl_length; $i++) {
-        if($i==0){
+        if($i==1){
          echo "<tr><th>X-Richtung</th>";
         }else{
         echo "<tr>";
