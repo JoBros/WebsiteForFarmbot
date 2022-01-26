@@ -35,8 +35,8 @@
   $dbname = "Farmbot";
   $tbl_name="PflanzenPos";
 
-  $tbl_width="6";
-  $tbl_length="11";
+  $tbl_width=6;
+  $tbl_length=11;
 
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
