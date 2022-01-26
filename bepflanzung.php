@@ -27,6 +27,7 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
+HI
 
 <script src="js/main.js"></script>
 
