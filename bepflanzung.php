@@ -32,7 +32,7 @@
 <?php
 $host="192.168.100.49";
 $username="me";
-$password="raspberry";
+$password="Alzheimer";
 $db_name="Farmbot";
 $tbl_name="PflanzenPos";
 $connection=mysqli_connect("$host","$username","$password","$db_name");
