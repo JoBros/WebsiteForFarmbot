@@ -4,7 +4,8 @@ var msg = {
   type: "befehl"
 };
 
-let socket = new WebSocket("ws://localhost:9010");
+//Wichtig!!!IP-Adresseändern!
+let socket = new WebSocket("ws://192.168.100.44:9010");
 socket.onopen = function(e) {
 
 };
