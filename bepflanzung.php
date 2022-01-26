@@ -60,7 +60,7 @@ In der nahestehenden Tabelle sind die vorhandenen Pflanzen aufgeführt.
 
         for($j=0; $j<=$tbl_width; $j++) {
           if($i==0  && $j == 0){
-             echo "<th>X-/Y- Richtung</th>";
+             echo "<th> X- / Y- Richtung</th>";
           }
           else if($i==0){
              echo "<th>X-Richtung</th>";
