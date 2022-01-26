@@ -35,12 +35,13 @@ div.anzeigeStatus{
 }
 
 table.anzeigeStatus{
+  width: 100%;
   overflow: scroll;
   height: 5%;
 }
 
 tr.anzeigeStatus{
-
+  width: 100%;
 }
 
 td.anzeigeStatus{
