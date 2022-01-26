@@ -39,8 +39,8 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
   $dbname = "Farmbot";
   $tbl_name="PflanzenPos";
 
-  $tbl_width=6;
-  $tbl_length=11;
+  $tbl_width=11;
+  $tbl_length=6;
 
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -61,15 +61,15 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
 
         for($j=0; $j<=$tbl_width; $j++) {
           if($i==0  && $j == 0){
-             echo "<th class='anzeigeStatus'> X- / Y- Richtung</th>";
+             echo "<th class='anzeigeStatus'> Y- / X- Richtung</th>";
           }
           else if($i==0){
-             echo "<th class='anzeigeStatus'>$i</th>";
+             echo "<th class='anzeigeStatus'>$j</th>";
           }
           else if($j == 0){
              echo "<th class='anzeigeStatus'>$i</th>";
           } else{
-            echo"<td id='$i.$j' class='anzeigeStatus'> <img src='top-view-soil.jpg' width='80px' height='80px'></td>";
+            echo"<td id='$j.$i' class='anzeigeStatus'> <img src='top-view-soil.jpg' width='80px' height='80px'></td>";
           }
         }
           echo "</tr>";
