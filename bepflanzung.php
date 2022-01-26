@@ -47,28 +47,28 @@ if (mysqli_connect_errno())
     echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
 }
 
-$sql = "SELECT t.* FROM History t ORDER BY timest DESC";
+$sql = "SELECT t.* FROM PflanzenPos ORDER BY  DESC";
     $result = $conn->query($sql);
-    echo "<tr><th>X</th><th class='anzeigeStatus'>Y</th><th class='anzeigeStatus'>Doing</th><th class='anzeigeStatus'>Datum</th></tr>";
+    for($i=1; $i<=$tbl_length; $i++)
+    {
+        echo "<tr>";
+        for($j=1; $j<=$tbl_width; $j++)
+        {
+          echo"<td id=$i . ".". $j> Inhalt $i $j</td>";
+        }
+        echo "</tr>";
+    }
 
     if ($result->num_rows > 0) {
       // output data of each row
       while ($row = $result->fetch_assoc()) {
-        echo "<tr class='anzeigeStatus'><td class='anzeigeStatus'>" . $row["x"] . "</td><td class='anzeigeStatus'>". $row["y"] . "</td><td class='anzeigeStatus'>" . $row["doing"] ."</td><td class='anzeigeStatus'>" . $row["timest"] . "</td></tr>";
+         echo "document.getElementById(" . $row["x"] . "." . $row["x"] . ").innerText = " . $row["bez"];
       }
     } else {
       echo "Kein Wert verfügbar";
     }
 
-for($i=1; $i<=$tbl_length; $i++)
-{
-    echo "<tr>";
-    for($j=1; $j<=$tbl_width; $j++)
-    {
-      echo"<td> Inhalt $i $j</td>";
-    }
-    echo "</tr>";
-}
+
 mysqli_close($conn);
 ?>
 </table>
