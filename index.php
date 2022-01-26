@@ -53,7 +53,7 @@
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
   <div>
-  <table>
+  <table style="mso-cellspacing: 20px;">
     <?php
 
     $servername = "192.168.100.49";
