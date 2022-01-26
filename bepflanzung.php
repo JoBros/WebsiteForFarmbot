@@ -55,7 +55,7 @@
       $result = $conn->query($sql);
       //Gebe Daten Tabellarisch aus.
       for($i=0; $i<=$tbl_length; $i++) {
-        echo "<tr class='beet'>";
+        echo "<tr class='anzeigeStatus'>";
 
 
 

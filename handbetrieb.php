@@ -26,26 +26,30 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
+
+<h2>Handbetriebsseite zum Farmbot</h2>
+<p>Auf dieser Seite kann alles gefunden werden, was zum manuellen Steuern des Farmbots nötig ist. Auf dieser Seite ist es möglich das Gehäuse in X, Y, und Z Richtung zu bewegen. Auch die Gießbewegung und die Wässerungsfunktion kann hier genutzt werden. Ebenso kann der Workflow zum Sähen seine Einleitung finden. </p>
+
 <table class="links">
   <tr>
-    <th></th>
-    <th><center><Button id="A">x ></Button></center></th>
-    <th></th>
+    <th class="anzeigeStatus" style="visibility: hidden"></th>
+    <th class="anzeigeStatus"><center><Button id="A">x ></Button></center></th>
+    <th class="anzeigeStatus" style="visibility: hidden"></th>
   </tr>
   <tr>
-    <td><Button id="W">y <</Button></td>
-    <td></td>
-    <td><Button id="S">y ></Button></td>
+    <td class="anzeigeStatus"><center><Button id="W">y <</Button></center></td>
+    <td class="anzeigeStatus" style="visibility: hidden"></td>
+    <td class="anzeigeStatus"><center><Button id="S">y ></Button></center></td>
   </tr>
   <tr>
-    <td></td>
-    <td><center><Button id="D">x <</Button></center></td>
-    <td></td>
+    <td class="anzeigeStatus" style="visibility: hidden"></td>
+    <td class="anzeigeStatus"><center><Button id="D">x <</Button></center></td>
+    <td class="anzeigeStatus" style="visibility: hidden"></td>
   </tr>
   <tr>
-    <td><Button id="Q">z <</Button></td>
-    <td></td>
-    <td><Button id="E">z ></Button></td>
+    <td class="anzeigeStatus"><center><Button id="Q">z <</Button></center></td>
+    <td class="anzeigeStatus" style="visibility: hidden"></td>
+    <td class="anzeigeStatus"><center><Button id="E">z ></Button></center></td>
   </tr>
 </table>
         <div class="rechts">
