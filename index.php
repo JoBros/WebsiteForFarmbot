@@ -68,13 +68,12 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT * FROM History t where ORDER BY timest desc limit 1";
+    $sql = "SELECT t.* FROM History t ORDER BY timest DESC";
     $result = $conn->query($sql);
 
 
     if ($result->num_rows > 0) {
       // output data of each row
-      $datumszahl = $result->num_rows;
       while ($row = $result->fetch_assoc()) {
         echo "<tr><td>" . $row["x"] . "</td><td>". $row["y"] . "</td><td>" . $row["doing"] ."</td><td>" . $row["timest"] . "</td></tr>";
       }
