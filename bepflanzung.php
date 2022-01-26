@@ -37,6 +37,15 @@
 
   $tbl_width="6";
   $tbl_length="11";
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  
 ?>
 </table>
 <script src="js/main.js"></script>
