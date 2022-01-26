@@ -59,7 +59,14 @@
           }
           echo "</tr>";
       }
-
+      if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+           echo "document.getElementById(" . $row["x"] . "." . $row["x"] . ").innerHTML = '" . $row["bez"] . "';";
+        }
+      } else {
+        echo "Kein Wert verfügbar";
+      }
 
 
     $conn->close();
