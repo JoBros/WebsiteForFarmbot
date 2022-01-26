@@ -63,11 +63,19 @@ td.anzeigeStatus{
 }
 
 td.beet{
+  box-sizing: border-box;
+  height: 3em;
+  color: white;
+  padding: 90px;
+  margin: 90px;
+}
+
+th.beet{
+  box-sizing: border-box;
   height: 3em;
   color: white;
   padding: 20px;
   margin: 30px;
-  background:darkseagreen;
 }
 
 tr.beet{
