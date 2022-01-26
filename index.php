@@ -36,7 +36,7 @@
 
   <h2>Wassersensorik </h2>
 <center>
-  <div style="min-width:30%; min-height:30%; max-width: 80%" id="chart_div"></div>
+  <div style="min-width:30%; min-height:30%; max-width: 90%" id="chart_div"></div>
   <p>Der aktuelle Bodenwasserwert liegt bei: <Label id="bwW" style="text-underline: #04AA6D; color: darkcyan"></Label> von 1024.</p>
 </center>
 
@@ -48,7 +48,7 @@
 
   <h2>Luftfeuchtigkeitsverlauf</h2>
 <center>
-  <div style="min-width:30%; min-height: 30%" id="chart_div2"></div>
+  <div style="min-width:30%; min-height: 30%;  max-width: 90%" id="chart_div2"></div>
   <p>Der aktuelle Luftfeuchtewert liegt bei: <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label> %.</p>
 </center>
 
