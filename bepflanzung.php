@@ -55,14 +55,18 @@ In der nahestehenden Tabelle sind die vorhandenen Pflanzen aufgeführt.
       //Gebe Daten Tabellarisch aus.
       for($i=0; $i<=$tbl_length; $i++) {
         echo "<tr>";
-        if($i==0){
-         echo "<th>X-Richtung</th>";
-        }
+
 
 
         for($j=0; $j<=$tbl_width; $j++) {
-          if($j == 0){
-          echo "<th>Y-Richtung</th>";
+          if($i==0  && $j == 0){
+             echo "<th>Ecke</th>";
+          }
+          else if($i==0){
+             echo "<th>X-Richtung</th>";
+          }
+          else if($j == 0){
+             echo "<th>Y-Richtung</th>";
           } else{
             echo"<td id='$i.$j'> Inhalt i$i j$j</td>";
           }
