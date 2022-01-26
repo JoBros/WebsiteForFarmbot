@@ -63,7 +63,7 @@ td.anzeigeStatus{
 
 button.anzeigeStatus{
   width: 100%;
-  min-height: 100%;
+  height: 3em;
   color: white;
   background:#04AA6D;
   box-sizing: border-box;

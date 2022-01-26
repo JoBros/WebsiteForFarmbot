@@ -32,9 +32,9 @@
 
 <table class="links">
   <tr>
-    <th class="anzeigeStatus" style="visibility: hidden"></th>
-    <th class="anzeigeStatus"><center><Button id="A" class="anzeigeStatus">x ></Button></center></th>
-    <th class="anzeigeStatus" style="visibility: hidden"></th>
+    <td class="anzeigeStatus" style="visibility: hidden"></td>
+    <td class="anzeigeStatus"><center><Button id="A" class="anzeigeStatus">x ></Button></center></td>
+    <td class="anzeigeStatus" style="visibility: hidden"></td>
   </tr>
   <tr>
     <td class="anzeigeStatus"><center><Button id="W" class="anzeigeStatus">y <</Button></center></td>
