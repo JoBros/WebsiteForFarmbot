@@ -49,7 +49,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 //Lade Daten
-$sql = "SELECT t.* FROM PflanzenPos";
+$sql = "SELECT value FROM SensorDat t where sensor='LF_1' ORDER BY created_at desc limit 1";
+//$sql = "SELECT t.* FROM PflanzenPos";
     $result = $conn->query($sql);
     //Gebe Daten Tabellarisch aus.
     for($i=1; $i<=$tbl_length; $i++)
