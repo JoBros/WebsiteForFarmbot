@@ -32,12 +32,12 @@
 
 
 <div style="padding-left:16px">
+  <p>Hier wird der aktuelle Sensorenwerte und die letzten Fahrbewegungen des Farmbots angezeigt. Das Fenster dient zur Anzeige für den Gärtner um Trends und aktuelle Bedürfnisse zu erkennen. </p>
   <h2>Wassersensorik </h2>
 
   <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
-  <p>Hier wird der aktuelle Wasserwert angezeigt, wobei rechts der aktuelle Wasserwert angezeigt wird, und über den Graphen der Trend angenommen werden kann. </p>
-  <h3>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></h3>
+  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></p>
 
   <h2>Temperatursensorik</h2>
 
@@ -222,14 +222,8 @@
     chart.draw(data, options);
 
   }
+  document.getElementById("bwW").innerText = "Hallowelt";
 </script>
-
-
-
-
-
-
-
 <script src="js/main.js"></script>
 
 </body>
