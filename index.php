@@ -52,7 +52,7 @@
   <p>Der aktuelle Temperaturwert liegt bei <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label></p>
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
-
+  <div>
   <table>
     <?php
 
@@ -75,7 +75,7 @@
     if ($result->num_rows > 0) {
       // output data of each row
       while ($row = $result->fetch_assoc()) {
-        echo "<tr style='padding: 12px; margin: 3px;'><td>" . $row["x"] . "</td><td>". $row["y"] . "</td><td>" . $row["doing"] ."</td><td>" . $row["timest"] . "</td></tr>";
+        echo "<tr><td>" . $row["x"] . "</td><td>". $row["y"] . "</td><td>" . $row["doing"] ."</td><td>" . $row["timest"] . "</td></tr>";
       }
     } else {
       echo "Kein Wert verfügbar";
@@ -83,6 +83,7 @@
     $conn->close();
     ?>
   </table>
+  </div>
 
 </div>
 <script>

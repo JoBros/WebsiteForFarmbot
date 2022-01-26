@@ -28,3 +28,13 @@ body {
   color: white;
 }
 
+div>table>tr{
+  background: #04AA6D;
+}
+
+div>table>tr>td{
+  background:coral;
+  box-sizing: border-box;
+  border-radius: 3px 15px 5px 30px;
+}
+
