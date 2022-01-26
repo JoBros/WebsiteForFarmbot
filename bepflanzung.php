@@ -63,10 +63,10 @@ In der nahestehenden Tabelle sind die vorhandenen Pflanzen aufgeführt.
              echo "<th> X- / Y- Richtung</th>";
           }
           else if($i==0){
-             echo "<th>Y $i</th>";
+             echo "<th>Y $j</th>";
           }
           else if($j == 0){
-             echo "<th>X $j</th>";
+             echo "<th>X $i</th>";
           } else{
             echo"<td id='$i.$j'> Inhalt i$i j$j</td>";
           }
