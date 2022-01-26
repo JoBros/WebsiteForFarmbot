@@ -40,9 +40,9 @@
   <p>Der aktuelle Bodenwasserwert liegt bei: <Label id="bwW" style="text-underline: #04AA6D; color: darkcyan"></Label> von 1024</p>
 
   <h2>Temperatursensorik</h2>
-
-  <div style="min-width:30%; min-height: 30%" id="chart_div1"></div>
-
+<right>
+  <div style="min-width:30%; min-height: 30%; max-width: 90%" id="chart_div1"></div>
+</right>
   <p>Der aktuelle Temperaturwert liegt bei: <Label id="bwT" style="text-underline: #04AA6D; color: darkcyan;"></Label> °C</p>
 
   <h2>Luftfeuchtigkeitsverlauf</h2>
