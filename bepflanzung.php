@@ -64,7 +64,7 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
              echo "<th class='anzeigeStatus'> X- / Y- Richtung</th>";
           }
           else if($i==0){
-             echo "<th class='anzeigeStatus'>$j</th>";
+             echo "<th class='anzeigeStatus'>$i</th>";
           }
           else if($j == 0){
              echo "<th class='anzeigeStatus'>$i</th>";
