@@ -29,6 +29,48 @@
 
 <center>
 Positionstabelle:
+
+ <div class="anzeigeStatus">
+  <table style="mso-cellspacing: 20px;" class="anzeigeStatus">
+    <?php
+
+    $servername = "192.168.100.49";
+    $username = "me";
+    $password = "Alzheimer";
+    $dbname = "Farmbot";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT t.* FROM History t ORDER BY timest DESC";
+    $result = $conn->query($sql);
+
+
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while ($row = $result->fetch_assoc()) {
+        echo "<tr class='anzeigeStatus'><td class='anzeigeStatus'>" . $row["x"] . "</td><td class='anzeigeStatus'>". $row["y"] . "</td><td class='anzeigeStatus'>" . $row["doing"] ."</td><td class='anzeigeStatus'>" . $row["timest"] . "</td></tr>";
+      }
+    } else {
+      echo "Kein Wert verfügbar";
+    }
+    $conn->close();
+    ?>
+  </table>
+  </div>
+
+
+
+
+
+
+
+
+
 <table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="grey">
 <?php
 $host="192.168.100.49";
