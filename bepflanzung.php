@@ -55,6 +55,9 @@
           echo "<tr><th>X-Richtung</th>";
           for($j=1; $j<=$tbl_width; $j++)
           {
+          if(j == 1){
+            echo "<th>Y-Richtung</th>";
+          }
             echo"<td id='$i.$j'> Inhalt $i $j</td>";
           }
           echo "</tr>";
