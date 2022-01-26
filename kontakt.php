@@ -27,7 +27,9 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
-
+<h2> Kontaktseite</h2>
+<h3> Hier lassen sich die Kontaktínformationen zu den Entwicklern und Betreuern finden.</h3>
+<p>  <p>
 
 <script src="js/main.js"></script>
 
