@@ -26,7 +26,7 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
-<table class="links" style="background-color: #cccccc;>
+<table class="links">
   <tr>
     <th></th>
     <th><Button id="A">x ></Button></th>
@@ -48,10 +48,7 @@
     <td><Button id="E">z ></Button></td>
   </tr>
 </table>
-  <table class="rechts">
-    <tr>
-      <th>
-        <div style="background-color: lightgrey; height: auto; margin-top: 1em; width: 100%;">
+        <div class="rechts">
           <Button id="wasserbtn" style="background-color: dodgerblue; color: white; height: 4em; width: 6em;">
             Wasser
           </Button>
@@ -66,9 +63,6 @@
           <input id="frucht" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Saat
             ausgeführt!</Label>
         </div>
-      </th>
-    </tr>
-  </table>
 
 <script src="js/main.js"></script>
 <script src="js/WebsocketControl.js"></script>
