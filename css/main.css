@@ -72,9 +72,10 @@ button.anzeigeStatus{
 
 .links {
   float: left;
-  width: 300px;
+  width: 600px;
 }
 .rechts {
+  width: 600px;
   float: left;
 }
 
