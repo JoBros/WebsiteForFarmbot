@@ -35,7 +35,7 @@ $username="me";
 $password="Alzheimer";
 $db_name="Farmbot";
 $tbl_name="PflanzenPos";
-$tbl_width="6";
+$tbl_width="10";
 $tbl_length="11";
 $connection=mysqli_connect("$host","$username","$password","$db_name");
 if (mysqli_connect_errno())
