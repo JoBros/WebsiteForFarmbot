@@ -49,7 +49,7 @@
   <h2>Luftfeuchtigkeitsverlauf</h2>
 <center>
   <div style="min-width:30%; min-height: 30%;  max-width: 90%" id="chart_div2"></div>
-  <p>Der aktuelle Luftfeuchtewert liegt bei: <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label> %.</p>
+  <p>Der aktuelle Luftfeuchtigkeitswert liegt bei: <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label> %.</p>
 </center>
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
@@ -183,7 +183,7 @@
       $sql = "SELECT value, created_at FROM SensorDat t where sensor='TP_1' ORDER BY created_at desc limit 288";
       $result = $conn->query($sql);
 
-      echo "['Datum', 'Temperatursensor'],";
+      echo "['Datum', 'TS_1'],";
 
       if ($result->num_rows > 0) {
         // output data of each row
@@ -232,7 +232,7 @@
       $sql = "SELECT value, created_at FROM SensorDat t where sensor='LF_1' ORDER BY created_at desc limit 288";
       $result = $conn->query($sql);
 
-      echo "['Datum', 'Luftfeuchtesensor'],";
+      echo "['Datum', 'LS_1'],";
 
       if ($result->num_rows > 0) {
         // output data of each row
