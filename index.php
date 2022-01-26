@@ -68,7 +68,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT value FROM SensorDat t where sensor='TP_1' ORDER BY created_at desc limit 1";
+    $sql = "SELECT * FROM History t where ORDER BY timest desc limit 1";
     $result = $conn->query($sql);
 
 
@@ -76,7 +76,7 @@
       // output data of each row
       $datumszahl = $result->num_rows;
       while ($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["value"] . "</td></tr>";
+        echo "<tr><td>" . $row["x"] . "</td><td>". $row["y"] . "</td><td>" . $row["doing"] ."</td><td>" . $row["timest"] . "</td></tr>";
       }
     } else {
       echo "Kein Wert verfügbar";
