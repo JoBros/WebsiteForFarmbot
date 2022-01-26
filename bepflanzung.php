@@ -26,7 +26,7 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
-<table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="#b88428">
+<table hspace="300" vspace="200" border='2' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="#b88428">
 <?php
 //Connection Data
   $servername = "192.168.100.49";
