@@ -32,12 +32,12 @@
 
 
 <div style="padding-left:16px">
+  <p>Hier wird der aktuelle Sensorenwerte und die letzten Fahrbewegungen des Farmbots angezeigt. Das Fenster dient zur Anzeige für den Gärtner um Trends und aktuelle Bedürfnisse zu erkennen. </p>
   <h2>Wassersensorik </h2>
 
   <div style="min-width:30%; min-height: 30%" id="chart_div"></div>
 
-  <p>Hier wird der aktuelle Wasserwert angezeigt, wobei rechts der aktuelle Wasserwert angezeigt wird, und über den Graphen der Trend angenommen werden kann. </p>
-  <h3>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></h3>
+  <p>Der aktuelle Bodenwasserwert liegt bei <Label id="bwW"></Label></p>
 
   <h2>Temperatursensorik</h2>
 
@@ -222,14 +222,35 @@
     chart.draw(data, options);
 
   }
+  <?php
+  $servername = "192.168.100.49";
+  $username = "me";
+  $password = "Alzheimer";
+  $dbname = "Farmbot";
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  $sql = "SELECT Last(value) FROM SensorDat t where sensor='WS_1' ORDER BY created_at desc limit 288";
+  $result = $conn->query($sql);
+
+
+  if ($result->num_rows > 0) {
+    // output data of each row
+    $datumszahl = $result->num_rows;
+    while($row = $result->fetch_assoc()) {
+      echo "document.getElementById('bwW').innerText = '". $row["value"] . "']";
+    }
+  } else {
+    echo "Kein Wert verfügbar";
+  }
+  $conn->close();
+  ?>
 </script>
-
-
-
-
-
-
-
 <script src="js/main.js"></script>
 
 </body>
