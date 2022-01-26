@@ -33,9 +33,9 @@
     <th></th>
   </tr>
   <tr>
-    <td><Button id="W">y <</Button></td>
+    <td><center><Button id="W">y <</Button></center></td>
     <td></td>
-    <td><Button id="S">y ></Button></td>
+    <td><center><Button id="S">y ></Button></center></td>
   </tr>
   <tr>
     <td></td>
@@ -43,9 +43,9 @@
     <td></td>
   </tr>
   <tr>
-    <td><Button id="Q">z <</Button></td>
+    <td><center><Button id="Q">z <</Button></center></td>
     <td></td>
-    <td><Button id="E">z ></Button></td>
+    <td><center><Button id="E">z ></Button></center></td>
   </tr>
 </table>
         <div class="rechts">
