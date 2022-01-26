@@ -83,11 +83,11 @@
     Wasser
   </Button>
   <input class="anzeigeStatus" id="_waternumber" style="height: 3em; width: 6em;" type="number" disabled="true"/><Label style="height: 4em; width: 6em;">% Wasser</Label>
-  <br>
+  <br><br>
   <Button class="anzeigeStatus" id="hakbtn" style="height: 4em; width: 6em;">Harke</Button>
   <input class="anzeigeStatus" disabled="true" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Harken ausgeführt!</Label>
-  <br>
-  <Button class="anzeigeStatus" id="saatbtn" style="height: 4em; width: 6em;">Saat</Button>
+  <br><br>
+  <Button class="anzeigeStatus" id="saatbtn" style="height: 4em; width: 6em;background: brown">Saat</Button>
   <input class="anzeigeStatus" id="frucht" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Saat ausgeführt!</Label>
 </div>
 </div>
