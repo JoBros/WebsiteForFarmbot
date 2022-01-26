@@ -85,3 +85,11 @@ tr.beet{
   width: 100%;
 }
 
+.links {
+  float: left;
+  width: 300px;
+}
+.rechts {
+  float: left;
+}
+

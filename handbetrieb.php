@@ -26,8 +26,7 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
-<center>
-<table style="background-color: #cccccc; clear: both">
+<table class="links" style="background-color: #cccccc; clear: both">
   <tr>
     <th><br></th>
     <th>
@@ -61,7 +60,7 @@
     </td>
   </tr>
 </table>
-  <table>
+  <table class="rechts">
     <tr>
       <th>
         <div style="background-color: lightgrey; height: auto; margin-top: 1em; width: 100%;">
@@ -82,10 +81,9 @@
       </th>
     </tr>
   </table>
-</center>
 
 <script src="js/main.js"></script>
-
+<script src="js/WebsocketControl.js"></script>
 </body>
 
 </html>
