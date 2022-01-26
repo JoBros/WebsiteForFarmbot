@@ -28,14 +28,15 @@
 </div>
 
 <center>
-<table border='1'>
+Positionstabelle:
+<table border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="grey">
 <?php
 $host="192.168.100.49";
 $username="me";
 $password="Alzheimer";
 $db_name="Farmbot";
 $tbl_name="PflanzenPos";
-$tbl_width="10";
+$tbl_width="6";
 $tbl_length="11";
 $connection=mysqli_connect("$host","$username","$password","$db_name");
 if (mysqli_connect_errno())
