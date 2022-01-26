@@ -71,7 +71,6 @@ $sql = "SELECT * FROM PflanzenPos";
   $conn->close();
 ?>
 </table>
-</center>
 
 <script src="js/main.js"></script>
 
