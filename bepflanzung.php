@@ -27,7 +27,16 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
-HI
+<table>
+ <tr>
+ <td axis="Milch">Es gibt Milch mit 3,5% Fett.</td>
+ <td axis="Reise">Eine Reise nach München kann lang werden.</td>
+ </tr>
+ <tr>
+ <td axis="Reise">Eine Reise nach Köln kann schnell gehen.</td>
+ <td axis="Milch">Es gibt Milch mit 1,5% Fett.</td>
+ </tr>
+</table> 
 
 <script src="js/main.js"></script>
 
