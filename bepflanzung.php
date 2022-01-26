@@ -26,9 +26,9 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
+<table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="white">
 
-
-
+</table>
 <script src="js/main.js"></script>
 
 </body>
