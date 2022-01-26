@@ -63,7 +63,7 @@ In der nahestehenden Tabelle sind die vorhandenen Pflanzen aufgeführt.
           if($j == 1){
           echo "<th>Y-Richtung</th>";
           } else{
-            echo"<td id='$i.$j'> Inhalt $i $j</td>";
+            echo"<td id='$i.$j'> Inhalt i$i j$j</td>";
           }
         }
           echo "</tr>";
