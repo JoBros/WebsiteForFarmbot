@@ -35,6 +35,8 @@ $username="me";
 $password="Alzheimer";
 $db_name="Farmbot";
 $tbl_name="PflanzenPos";
+$tbl_width="60";
+$tbl_length="110";
 $connection=mysqli_connect("$host","$username","$password","$db_name");
 if (mysqli_connect_errno())
 {
@@ -42,12 +44,11 @@ if (mysqli_connect_errno())
 }
 $result = mysqli_query($connection, "SELECT * FROM PflanzenPos")or die("Error: " . mysqli_error($connection));
 $num_rows=mysqli_num_rows($result);
-$rows =  $num_rows/3;
 
-for($i=1; $i<=$rows ; $i++)
+for($i=1; $i<=$tbl_length; $i++)
 {
     echo "<tr>";
-    for($j=1; $j<=3; $j++)
+    for($j=1; $j<=$tbl_width; $j++)
     {
       echo"<td> Inhalt $i $j</td>";
     }
