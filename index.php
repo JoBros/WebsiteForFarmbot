@@ -43,7 +43,7 @@
 
   <div style="min-width:30%; min-height: 30%" id="chart_div1"></div>
 
-  <p>Der aktuelle Temperaturwert liegt bei: <Label id="bwT" style="text-underline: #04AA6D; color: darkcyan;"></Label>°C</p>
+  <p>Der aktuelle Temperaturwert liegt bei: <Label id="bwT" style="text-underline: #04AA6D; color: darkcyan;"></Label> °C</p>
 
   <h2>Luftfeuchtigkeitsverlauf</h2>
 
