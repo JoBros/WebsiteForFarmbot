@@ -26,38 +26,26 @@
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
-<table class="links" style="background-color: #cccccc; clear: both">
+<table class="links" style="background-color: #cccccc;>
   <tr>
-    <th><br></th>
-    <th>
-      <Button id="A">x ></Button>
-    </th>
-    <th><br></th>
+    <th></th>
+    <th><Button id="A">x ></Button></th>
+    <th></th>
   </tr>
   <tr>
-    <td>
-      <Button id="W">y <</Button>
-    </td>
-    <td><br></td>
-    <td>
-      <Button id="S">y ></Button>
-    </td>
+    <td><Button id="W">y <</Button></td>
+    <td></td>
+    <td><Button id="S">y ></Button></td>
   </tr>
   <tr>
-    <td><br></td>
-    <td>
-      <Button id="D">x <</Button>
-    </td>
-    <td><br></td>
+    <td></td>
+    <td><Button id="D">x <</Button></td>
+    <td></td>
   </tr>
   <tr>
-    <td>
-      <Button id="Q">z <</Button>
-    </td>
-    <td><br></td>
-    <td>
-      <Button id="E">z ></Button>
-    </td>
+    <td><Button id="Q">z <</Button></td>
+    <td></td>
+    <td><Button id="E">z ></Button></td>
   </tr>
 </table>
   <table class="rechts">
