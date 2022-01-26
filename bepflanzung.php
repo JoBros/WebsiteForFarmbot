@@ -50,7 +50,15 @@
   //$sql = "SELECT t.* FROM PflanzenPos t";
       $result = $conn->query($sql);
       //Gebe Daten Tabellarisch aus.
-
+      for($i=1; $i<=$tbl_length; $i++)
+      {
+          echo "<tr>";
+          for($j=1; $j<=$tbl_width; $j++)
+          {
+            echo"<td id='" . $i . ".". $j"'> Inhalt $i $j</td>";
+          }
+          echo "</tr>";
+      }
 
 
 
