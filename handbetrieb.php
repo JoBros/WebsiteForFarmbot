@@ -29,7 +29,7 @@
 <table class="links">
   <tr>
     <th></th>
-    <th><Button id="A">x ></Button></th>
+    <th><center><Button id="A">x ></Button></center></th>
     <th></th>
   </tr>
   <tr>
@@ -39,7 +39,7 @@
   </tr>
   <tr>
     <td></td>
-    <td><Button id="D">x <</Button></td>
+    <td><center><Button id="D">x <</Button></center></td>
     <td></td>
   </tr>
   <tr>
