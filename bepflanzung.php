@@ -68,7 +68,7 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
           else if($j == 0){
              echo "<th>$i</th>";
           } else{
-            echo"<td id='$i.$j'> Inhalt i$i j$j</td>";
+            echo"<td id='$i.$j'> <img src=“/img/top-view-soil.jpg“></td>";
           }
         }
           echo "</tr>";
