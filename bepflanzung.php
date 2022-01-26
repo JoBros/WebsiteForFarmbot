@@ -27,10 +27,6 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
-//Tabelle mit den Positionsdaten ausgeben:
-<center>
-Positionstabelle:
-
 <table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="white">
 <?php
 //Connection Data
