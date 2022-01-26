@@ -55,21 +55,21 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
       $result = $conn->query($sql);
       //Gebe Daten Tabellarisch aus.
       for($i=0; $i<=$tbl_length; $i++) {
-        echo "<tr>";
+        echo "<tr class='beet'>";
 
 
 
         for($j=0; $j<=$tbl_width; $j++) {
           if($i==0  && $j == 0){
-             echo "<th> X- / Y- Richtung</th>";
+             echo "<th class='beet'> X- / Y- Richtung</th>";
           }
           else if($i==0){
-             echo "<th>$j</th>";
+             echo "<th class='beet'>$j</th>";
           }
           else if($j == 0){
-             echo "<th>$i</th>";
+             echo "<th class='beet'>$i</th>";
           } else{
-            echo"<td id='$i.$j'> <img src='top-view-soil.jpg' width='80px' height='80px'></td>";
+            echo"<td id='$i.$j' class='beet'> <img src='top-view-soil.jpg' width='80px' height='80px'></td>";
           }
         }
           echo "</tr>";
