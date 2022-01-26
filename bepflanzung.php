@@ -30,7 +30,7 @@
 In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem Beet aufgeführt.
 
 <center>
-<table hspace="300" vspace="200">
+<table hspace="240" vspace="160">
 <?php
 //Connection Data
   $servername = "192.168.100.49";
@@ -61,7 +61,7 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
 
         for($j=0; $j<=$tbl_width; $j++) {
           if($i==0  && $j == 0){
-             echo "<th class='anzeigeStatus'> Y- / X- Richtung</th>";
+             echo "<th class='anzeigeStatus'> Y-\X- Richtung</th>";
           }
           else if($i==0){
              echo "<th class='anzeigeStatus'>$j</th>";
