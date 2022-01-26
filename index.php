@@ -54,9 +54,35 @@
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
 
   <table>
-    <tr><td>Inhalt</td></tr>
-    <tr><td>Inhalt2</td></tr>
-    <tr><td>inhalt3</td></tr>
+    <?php
+
+    $servername = "192.168.100.49";
+    $username = "me";
+    $password = "Alzheimer";
+    $dbname = "Farmbot";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT value FROM SensorDat t where sensor='TP_1' ORDER BY created_at desc limit 1";
+    $result = $conn->query($sql);
+
+
+    if ($result->num_rows > 0) {
+      // output data of each row
+      $datumszahl = $result->num_rows;
+      while ($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["value"] . "</td></tr>";
+      }
+    } else {
+      echo "Kein Wert verfügbar";
+    }
+    $conn->close();
+    ?>
   </table>
 
 </div>
