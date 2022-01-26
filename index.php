@@ -68,7 +68,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT * FROM History t where ORDER BY timest desc limit 1";
+    $sql = "SELECT t.* FROM Farmbot.History t ORDER BY timest DESC";
     $result = $conn->query($sql);
 
 
