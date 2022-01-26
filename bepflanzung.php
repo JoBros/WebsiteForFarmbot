@@ -27,7 +27,7 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 <h2>Pflanzenpositionen </h2>
-In der nahestehenden Tabelle sind die vorhandenen Pflanzen aufgeführt.
+In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem Beet aufgeführt.
 
 <table hspace="300" vspace="200" border='2' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="#b88428">
 <?php
