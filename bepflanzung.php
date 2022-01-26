@@ -29,7 +29,8 @@
 <h2>Pflanzenpositionen </h2>
 In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem Beet aufgeführt.
 
-<table hspace="300" vspace="200" border='2' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="#b88428">
+<center>
+<table hspace="300" vspace="200" border='2' cellspacing="20" bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="#b88428">
 <?php
 //Connection Data
   $servername = "192.168.100.49";
@@ -87,6 +88,7 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
     $conn->close();
 ?>
 </table>
+</center>
 <script src="js/main.js"></script>
 
 </body>
