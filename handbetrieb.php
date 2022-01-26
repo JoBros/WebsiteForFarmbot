@@ -61,31 +61,34 @@
     </td>
   </tr>
 </table>
+  <table>
+    <tr>
+      <th>
+        <div style="background-color: lightgrey; height: auto; margin-top: 1em; width: 100%;">
+          <Button id="wasserbtn" style="background-color: dodgerblue; color: white; height: 4em; width: 6em;">
+            Wasser
+          </Button>
+          <input id="_waternumber" style="height: 3em; width: 6em;" type="number" disabled="true"/><Label style="height: 4em; width: 6em;">%
+            Wasser</Label>
+          <br>
+          <Button id="hakbtn" style="height: 4em; width: 6em;">Harke</Button>
+          <input disabled="true" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Harken
+            ausgeführt!</Label>
+          <br>
+          <Button id="saatbtn" style="height: 4em; width: 6em;">Saat</Button>
+          <input id="frucht" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Saat
+            ausgeführt!</Label>
+        </div>
+      </th>
+    </tr>
+  </table>
 </center>
 <div id="handcontrol" style="width: auto; margin: 2%; padding: 2%; background-color: whitesmoke; min-width: 38em; ">
   <div style="margin-right: 10%; margin-top: 1%; padding-top: 1%; float: right; border: 1px black; clear: revert; ">
     <table style="align-items: center; align-content: center; background-color: lightgrey">
 
 
-      <tr>
-        <th>
-          <div style="background-color: lightgrey; height: auto; margin-top: 1em; width: 100%;">
-            <Button id="wasserbtn" style="background-color: dodgerblue; color: white; height: 4em; width: 6em;">
-              Wasser
-            </Button>
-            <input id="_waternumber" style="height: 3em; width: 6em;" type="number" disabled="true"/><Label style="height: 4em; width: 6em;">%
-              Wasser</Label>
-            <br>
-            <Button id="hakbtn" style="height: 4em; width: 6em;">Harke</Button>
-            <input disabled="true" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Harken
-              ausgeführt!</Label>
-            <br>
-            <Button id="saatbtn" style="height: 4em; width: 6em;">Saat</Button>
-            <input id="frucht" style="height: 3em; width: 6em;"/><Label style="height: 3em; width: 6em;" hidden="true">Saat
-              ausgeführt!</Label>
-          </div>
-        </th>
-      </tr>
+
 
       <tr>
         <th>
