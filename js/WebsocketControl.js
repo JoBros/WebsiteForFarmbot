@@ -87,6 +87,10 @@ document.getElementById("saatbtn").onmousedown = function(){
   send = ( '{"type":"saat","value":"' + value + '"}');
 }
 
+document.getElementById("saatbtn").onmouseup = function(){
+  send = 'nop';
+}
+
 document.getElementById("A").onmousedown = function(){
   send = 'A';
 }
