@@ -83,45 +83,6 @@
     </tr>
   </table>
 </center>
-<div id="handcontrol" style="width: auto; margin: 2%; padding: 2%; background-color: whitesmoke; min-width: 38em; ">
-  <div style="margin-right: 10%; margin-top: 1%; padding-top: 1%; float: right; border: 1px black; clear: revert; ">
-    <table style="align-items: center; align-content: center; background-color: lightgrey">
-
-
-
-
-      <tr>
-        <th>
-          <ol id="plantdat" style="clear:both; background-color: lightgrey">
-          </ol>
-        </th>
-      </tr>
-      <tr>
-        <th>
-          <div style="width: 100%; height: auto; background-color: #b3d4fc; clear: both;">
-            <table style="padding: 0.5em">
-              <tr>
-                <td><Label style="padding: 0.5em">Sorte:</Label></td>
-                <td><Label id="pflanzeeins" style="padding: 0.5em; min-width: fit-content"></Label></td>
-              </tr>
-              <tr>
-                <td><Label style="padding: 0.5em">Bodenbeschaffenheit:</Label></td>
-                <td><Label id="pflanzezwei" style="padding: 0.5em"></Label></td>
-              </tr>
-              <tr>
-                <td><Label style="padding: 0.5em">Wachstumsdauer min/max:</Label></td>
-                <td><Label id="pflanzedrei" style="padding: 0.5em"></Label></td>
-              </tr>
-              <tr>
-                <td><Label style="padding: 0.5em">Aussaatzeitpunkt von/bis</Label></td>
-                <td><Label id="pflanzevier" style="padding: 0.5em"></Label></td>
-              </tr>
-            </table>
-          </div>
-      </tr>
-    </table>
-
-  </div>
 
 <script src="js/main.js"></script>
 
