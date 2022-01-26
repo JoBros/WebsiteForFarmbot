@@ -41,7 +41,7 @@ $tbl_name="PflanzenPos";
 
 $tbl_width="6";
 $tbl_length="11";
-$connection=mysqli_connect("$host","$username","$password","$db_name");
+$conn=mysqli_connect("$host","$username","$password","$db_name");
 if (mysqli_connect_errno())
 {
     echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
@@ -69,7 +69,7 @@ for($i=1; $i<=$tbl_length; $i++)
     }
     echo "</tr>";
 }
-mysqli_close($connection);
+mysqli_close($conn);
 ?>
 </table>
 </center>
