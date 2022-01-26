@@ -56,7 +56,7 @@ In der nahestehenden Tabelle sind die vorhandenen Pflanzen aufgeführt.
       for($i=1; $i<=$tbl_length; $i++) {
         echo "<tr><th>X-Richtung</th>";
         for($j=0; $j<=$tbl_width; $j++) {
-          if($j == 0){
+          if($j == 1){
           echo "<th>Y-Richtung</th>";
           } else{
             echo"<td id='$i.$j'> Inhalt $i $j</td>";
