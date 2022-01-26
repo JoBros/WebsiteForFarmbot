@@ -29,7 +29,7 @@
 
 <center>
 Positionstabelle:
-<table border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="grey">
+<table hspace="300" vspace="200" border='1' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="grey">
 <?php
 $host="192.168.100.49";
 $username="me";
@@ -44,7 +44,19 @@ if (mysqli_connect_errno())
     echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
 }
 $result = mysqli_query($connection, "SELECT * FROM PflanzenPos")or die("Error: " . mysqli_error($connection));
-$num_rows=mysqli_num_rows($result);
+
+$sql = "SELECT value,x FROM PflanzenPos ORDER BY x DESC";
+      $result = $connection->query($sql);
+if ($result->num_rows > 0) {
+      // output data of each row
+      while ($row = $result->fetch_assoc()) {
+        echo "<tr class='anzeigeStatus'><td class='anzeigeStatus'>" . $row["x"] . "</td><td class='anzeigeStatus'>". $row["y"] . "</td><td class='anzeigeStatus'>" . $row["doing"] ."</td><td class='anzeigeStatus'>" . $row["timest"] . "</td></tr>";
+      }
+    } else {
+      echo "Kein Wert verfügbar";
+    }
+    $conn->close();
+
 
 for($i=1; $i<=$tbl_length; $i++)
 {
