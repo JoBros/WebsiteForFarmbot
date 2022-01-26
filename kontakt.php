@@ -27,7 +27,7 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 
-<h2>Viele der gezeigten Grafiken Stammen freundlicherweise unter Gratis Lizenz von: <a href='https://de.freepik.com/fotos/blumen'>Blumen Foto erstellt von freepik - de.freepik.com</a> </h2>
+
 
 <script src="js/main.js"></script>
 
