@@ -47,7 +47,7 @@ if (mysqli_connect_errno())
     echo "The application has failed to connect to the mysql database server: " .mysqli_connect_error();
 }
 
-$sql = "SELECT t.* FROM PflanzenPos ORDER BY  DESC";
+$sql = "SELECT t.* FROM PflanzenPos";
     $result = $conn->query($sql);
     for($i=1; $i<=$tbl_length; $i++)
     {
