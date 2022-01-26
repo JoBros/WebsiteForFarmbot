@@ -45,7 +45,31 @@
     die("Connection failed: " . $conn->connect_error);
   }
 
-  
+  //Lade Daten
+  $sql = "SELECT * FROM PflanzenPos";
+  //$sql = "SELECT t.* FROM PflanzenPos t";
+      $result = $conn->query($sql);
+      //Gebe Daten Tabellarisch aus.
+      for($i=1; $i<=$tbl_length; $i++)
+      {
+          echo "<tr>";
+          for($j=1; $j<=$tbl_width; $j++)
+          {
+            echo"<td id=" . $i . ".". $j"> Inhalt $i $j</td>";
+          }
+          echo "</tr>";
+      }
+
+      if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+           echo "document.getElementById(" . $row["x"] . "." . $row["x"] . ").innerHTML = '" . $row["bez"] . "';";
+        }
+      } else {
+        echo "Kein Wert verfügbar";
+      }
+
+    $conn->close();
 ?>
 </table>
 <script src="js/main.js"></script>
