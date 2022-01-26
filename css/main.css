@@ -44,6 +44,14 @@ tr.anzeigeStatus{
   width: 100%;
 }
 
+th.anzeigeStatus{
+  height: 3em;
+  color: white;
+  background: darkgreen;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 td.anzeigeStatus{
   height: 3em;
   color: white;

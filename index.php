@@ -70,7 +70,7 @@
 
     $sql = "SELECT t.* FROM History t ORDER BY timest DESC";
     $result = $conn->query($sql);
-    echo "<tr><th>X</th><th>Y</th><th>Doing</th><th>Datum</th></tr>";
+    echo "<tr class='anzeigeStatus'><th class='anzeigeStatus'>X</th><th class='anzeigeStatus'>Y</th><th class='anzeigeStatus'>Doing</th><th class='anzeigeStatus'>Datum</th></tr>";
 
     if ($result->num_rows > 0) {
       // output data of each row
