@@ -222,37 +222,6 @@
     chart.draw(data, options);
 
   }
-
-  <?php
-  //-> Read from Database
-  $servername = "192.168.100.49";
-  $username = "me";
-  $password = "Alzheimer";
-  $dbname = "Farmbot";
-
-  // Create connection
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  // Check connection
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-
-  $sql = "SELECT value, created_at FROM SensorDat t where sensor='LF_1' ORDER BY created_at desc limit 288";
-  $result = $conn->query($sql);
-
-  if ($result->num_rows > 0) {
-    // output data of each row
-    $datumszahl = $result->num_rows;
-    while($row = $result->fetch_assoc()) {
-      echo $row["value"];
-    }
-  } else {
-    echo "0 results";
-  }
-  $conn->close();
-
-  ?>
-
 </script>
 
 
