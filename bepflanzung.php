@@ -30,7 +30,7 @@
 In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem Beet aufgeführt.
 
 <center>
-<table hspace="300" vspace="200" border='2' cellspacing="20" bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="#b88428">
+<table hspace="300" vspace="200" border='2' bordercolordark="#800000" bordercolorlight="#FF0000" bgcolor="#b88428">
 <?php
 //Connection Data
   $servername = "192.168.100.49";
@@ -69,7 +69,7 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
           else if($j == 0){
              echo "<th>$i</th>";
           } else{
-            echo"<td id='$i.$j'> <img src='top-view-soil.jpg' width='5%' height='5%'></td>";
+            echo"<td id='$i.$j'> <img src='top-view-soil.jpg' width='400px' height='400px'></td>";
           }
         }
           echo "</tr>";
