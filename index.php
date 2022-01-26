@@ -52,7 +52,7 @@
   <p>Der aktuelle Temperaturwert liegt bei <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label></p>
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
-  <div>
+  <div class="anzeigeStatus">
   <table style="mso-cellspacing: 20px;" class="anzeigeStatus">
     <?php
 
