@@ -49,7 +49,7 @@
   <h2>Luftfeuchtigkeitsverlauf</h2>
 <center>
   <div style="min-width:30%; min-height: 30%" id="chart_div2"></div>
-  <p>Der aktuelle Luftfeuchtewert liegt bei: <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label>%.</p>
+  <p>Der aktuelle Luftfeuchtewert liegt bei: <Label id="bwL" style="text-underline: #04AA6D; color: darkcyan;"></Label> %.</p>
 </center>
 
   <h2>Welche arbeiten wurden in der letzten Zeit gemacht?</h2>
