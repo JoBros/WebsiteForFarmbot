@@ -78,7 +78,7 @@
     </td>
   </tr>
 </table>
-<div class="rechts">
+<div class="rechts" style="padding-top: 150px; padding-left: 50px;">
   <Button class="anzeigeStatus" id="wasserbtn" style="background-color: dodgerblue; color: white; height: 4em; width: 6em;">
     Wasser
   </Button>
