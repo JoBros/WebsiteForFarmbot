@@ -78,7 +78,7 @@
     </td>
   </tr>
 </table>
-<div>
+<div class="rechts">
   <Button id="wasserbtn" style="background-color: dodgerblue; color: white; height: 4em; width: 6em;">
     Wasser
   </Button>
