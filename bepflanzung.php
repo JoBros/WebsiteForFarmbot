@@ -79,7 +79,7 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
         echo "<script>";
         while ($row = $result->fetch_assoc()) {
           if( strcmp($row["bez"], "Radieschen") == 0) {
-            echo "document.getElementById('" . $row["x"] . "." . $row["x"] . "').innerHTML = '<img src='architetto-ravanello.svg' width='50px' height='50px'>';";
+            echo "document.getElementById('" . $row["x"] . "." . $row["y"] . "').innerHTML = '<img src='architetto-ravanello.svg' width='50px' height='50px'>';";
           }
         } echo "</script>";
       } else {
