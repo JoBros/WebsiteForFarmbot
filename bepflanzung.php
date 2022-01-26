@@ -55,7 +55,7 @@
           echo "<tr>";
           for($j=1; $j<=$tbl_width; $j++)
           {
-            echo"<td id='" . $i . ".". $j"'> Inhalt $i $j</td>";
+            echo"<td> Inhalt $i $j</td>";
           }
           echo "</tr>";
       }
