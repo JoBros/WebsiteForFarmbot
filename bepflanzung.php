@@ -30,7 +30,7 @@
 In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem Beet aufgeführt.
 
 <center>
-<table hspace="240" vspace="160">
+<table width="60%" height="40%">
 <?php
 //Connection Data
   $servername = "192.168.100.49";
