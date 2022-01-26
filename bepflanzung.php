@@ -50,15 +50,14 @@
   //$sql = "SELECT t.* FROM PflanzenPos t";
       $result = $conn->query($sql);
       //Gebe Daten Tabellarisch aus.
-      for($i=1; $i<=$tbl_length; $i++)
-      {
-          echo "<tr><th>X-Richtung</th>";
-          for($j=1; $j<=$tbl_width; $j++)
-          {
-          if(j == 1){
-            echo "<th>Y-Richtung</th>";
-          }
+      for($i=1; $i<=$tbl_length; $i++) {
+        echo "<tr><th>X-Richtung</th>";
+        for($j=0; $j<=$tbl_width; $j++) {
+          if(j == 0){
+          echo "<th>Y-Richtung</th>";
+          } else{
             echo"<td id='$i.$j'> Inhalt $i $j</td>";
+            }
           }
           echo "</tr>";
       }
