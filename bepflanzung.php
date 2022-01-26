@@ -69,7 +69,7 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
           else if($j == 0){
              echo "<th class='anzeigeStatus'>$i</th>";
           } else{
-            echo"<td id='$j.$i' class='anzeigeStatus'> <img src='top-view-soil.jpg' width='50px' height='50px'></td>";
+            echo"<td id='$j.$i' class='anzeigeStatus'> <img src='seamless-dirt-texture.svg' width='50px' height='50px'></td>";
           }
         }
           echo "</tr>";
@@ -78,7 +78,9 @@ In der angezeigten Tabelle sind die vorhandenen Pflanzen und deren Platz auf dem
         // output data of each row
         echo "<script>";
         while ($row = $result->fetch_assoc()) {
-           echo "document.getElementById('" . $row["x"] . "." . $row["x"] . "').innerHTML = '" . $row["bez"] . "';";
+          if($row["bez"] == "Radieschen") {
+            echo "document.getElementById('" . $row["x"] . "." . $row["x"] . "').innerHTML = '<img src='architetto-ravanello.svg' width='50px' height='50px'>';";
+          }
         } echo "</script>";
       } else {
         echo "Kein Wert verfügbar";
