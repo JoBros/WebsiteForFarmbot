@@ -69,7 +69,7 @@
           else if($j == 0){
              echo "<th class='anzeigeStatus2'>$i</th>";
           } else{
-            echo"<td id='$j.$i' class='anzeigeStatus2'> <img src='seamless-dirt-texture.svg' width='600%' height='600%'></td>";
+            echo"<td id='$j.$i' class='anzeigeStatus2'> <img src='seamless-dirt-texture.svg' width='3em' height='3em'></td>";
           }
         }
           echo "</tr>";
