@@ -69,7 +69,7 @@
           else if($j == 0){
              echo "<th class='anzeigeStatus2'>$i</th>";
           } else{
-            echo"<td id='$j.$i' class='anzeigeStatus2'> <img src='seamless-dirt-texture.svg' width='50px' height='50px'></td>";
+            echo"<td id='$j.$i' class='anzeigeStatus2'> <img src='seamless-dirt-texture.svg' width='100%' height='100%'></td>";
           }
         }
           echo "</tr>";
@@ -79,7 +79,7 @@
         echo "<script>";
         while ($row = $result->fetch_assoc()) {
           if( strcmp($row["bez"], "Radieschen") == 0) {
-            echo "document.getElementById('" . $row["x"] . "." . $row["y"] . "').innerHTML = '<img src=\"architetto-ravanello.svg\" width=\"50px\" height=\"50px\">';";
+            echo "document.getElementById('" . $row["x"] . "." . $row["y"] . "').innerHTML = '<img src=\"architetto-ravanello.svg\" width=\"100%\" height=\"100%\">';";
           }
         } echo "</script>";
       } else {
