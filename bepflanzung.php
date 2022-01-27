@@ -55,21 +55,21 @@
       $result = $conn->query($sql);
       //Gebe Daten Tabellarisch aus.
       for($i=0; $i<=$tbl_length; $i++) {
-        echo "<tr class='anzeigeStatus'>";
+        echo "<tr class='anzeigeStatus2'>";
 
 
 
         for($j=0; $j<=$tbl_width; $j++) {
           if($i==0  && $j == 0){
-             echo "<th class='anzeigeStatus'> Y-\X- Richtung</th>";
+             echo "<th class='anzeigeStatus2'> Y-\X- Richtung</th>";
           }
           else if($i==0){
-             echo "<th class='anzeigeStatus'>$j</th>";
+             echo "<th class='anzeigeStatus2'>$j</th>";
           }
           else if($j == 0){
-             echo "<th class='anzeigeStatus'>$i</th>";
+             echo "<th class='anzeigeStatus2'>$i</th>";
           } else{
-            echo"<td id='$j.$i' class='anzeigeStatus'> <img src='seamless-dirt-texture.svg' width='50px' height='50px'></td>";
+            echo"<td id='$j.$i' class='anzeigeStatus2'> <img src='seamless-dirt-texture.svg' width='50px' height='50px'></td>";
           }
         }
           echo "</tr>";
