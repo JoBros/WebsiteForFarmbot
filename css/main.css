@@ -71,15 +71,30 @@ button.anzeigeStatus{
 }
 
 td.anzeigeStatus2{
-
+  height: 3em;
+  color: white;
+  margin: 30px;
+  background:#04AA6D;
+  box-sizing: border-box;
+  border-radius: 3px 15px 5px 30px;
+  padding: 20px;
 }
 
 button.anzeigeStatus2{
-
+  width: 100%;
+  height: 3em;
+  color: white;
+  background:#04AA6D;
+  box-sizing: border-box;
+  border-radius: 3px 15px 5px 30px;
 }
 
 tr.anzeigeStatus2{
-
+  height: 3em;
+  color: white;
+  background: #333;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .links {
