@@ -20,18 +20,18 @@
 <body>
 <h1 style="background-color: #333; font-family: Arial, Helvetica, sans-serif; padding: 15px; margin: 0px; color: white">Farmbotsteuerung</h1>
 <div class="topnav">
-  <a href="index.php">Status</a>
+  <a  href="index.php">Status</a>
   <a href="bepflanzung.php">Bepflanzung</a>
   <a href="handbetrieb.php">Handbetrieb</a>
-  <a href="VideoLog.php">Videolog</a>
-  <a class="active" href="kontakt.php">Kontakt</a>
+  <a class="active" href="VideoLog.php">Videolog</a>
+  <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
-
-<h2> Kontaktseite</h2>
-<h3> Hier lassen sich die Kontaktínformationen zu den Entwicklern und Betreuern finden.</h3>
-<p>  <p>
-
+<center>
+  <h2> Willkommen auf der Auskunfsseite zum Farmbot</h2>
+  <h3> Eine Projektarbeit von Christian Küllmer und Jonas Kallweidt </h3>
+  <p> Mit Hilfe des Farmbots ist es möglich, typische Arbeitsschritte der Pflanzenaufzucht und Pflege maschinell auszuführen. <p>
+</center>
 <script src="js/main.js"></script>
 
 </body>

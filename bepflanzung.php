@@ -23,6 +23,7 @@
   <a href="index.php">Status</a>
   <a class="active" href="bepflanzung.php">Bepflanzung</a>
   <a href="handbetrieb.php">Handbetrieb</a>
+  <a href="VideoLog.php">Videolog</a>
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
