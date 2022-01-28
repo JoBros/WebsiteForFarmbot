@@ -18,6 +18,7 @@
 </head>
 
 <body>
+<center>
 <h1 style="background-color: #333; font-family: Arial, Helvetica, sans-serif; padding: 15px; margin: 0px; color: white">Farmbotsteuerung</h1>
 <div class="topnav">
   <a href="index.php">Status</a>
@@ -33,7 +34,7 @@
 <p class="links">Jonas Kallweidt <br> Student der Elektrotechnik der Uni Kassel </p><p class="rechts"> Christian Küllmer <br> Student der Informatik und der Elektrotechnik der Uni Kassel </p>
 
 <script src="js/main.js"></script>
-
+</center>
 </body>
 
 </html>
