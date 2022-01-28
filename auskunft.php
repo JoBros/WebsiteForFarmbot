@@ -28,7 +28,7 @@
   <a class="active" href="auskunft.php">Auskunft</a>
 </div>
 <center>
-  
+
 <h2> Willkommen auf der Auskunfsseite zum Farmbot</h2>
 <h3> Eine Projektarbeit von Christian Küllmer und Jonas Kallweidt </h3>
 <p> Mit Hilfe des Farmbots ist es möglich, typische Arbeitsschritte der Pflanzenaufzucht und Pflege maschinell auszuführen.<p>

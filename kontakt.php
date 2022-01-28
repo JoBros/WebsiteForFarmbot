@@ -30,7 +30,7 @@
 
 <h2> Kontaktseite</h2>
 <h3> Hier lassen sich die Kontaktínformationen zu den Entwicklern und Betreuern finden.</h3>
-<p class="links">Jonas Kallweidt <br> Student der Elektrotechnik der Uni Kassel </p> Christian Küllmer <br> Student der Informatik und der Elektrotechnik der Uni Kassel <p class="rechts">
+<p class="links">Jonas Kallweidt <br> Student der Elektrotechnik der Uni Kassel </p><p class="rechts"> Christian Küllmer <br> Student der Informatik und der Elektrotechnik der Uni Kassel </p>
 
 <script src="js/main.js"></script>
 
