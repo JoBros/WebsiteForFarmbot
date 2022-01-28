@@ -14,7 +14,6 @@
   <meta name="theme-color" content="#fafafa">
   <link href="css/main.css" rel="stylesheet">
   <!-- Text -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -28,9 +27,17 @@
   <a href="auskunft.php">Auskunft</a>
 </div>
 <center>
-  <h2> Willkommen auf der Auskunfsseite zum Farmbot</h2>
-  <h3> Eine Projektarbeit von Christian Küllmer und Jonas Kallweidt </h3>
-  <p> Mit Hilfe des Farmbots ist es möglich, typische Arbeitsschritte der Pflanzenaufzucht und Pflege maschinell auszuführen. <p>
+  <h2>Auf dieser Seite werden die Überwachungsbilder der Pflanzenzucht in ausgewertetem Zustand zugänglich. Dadurch können wir aktuelle Maßnahmen direkt ableiten und für eine bessere Überwachung der Pflanzen sorgen.</h2>
+
+  <center>
+    <!-- Das wäre eine Möglichkeit die Videos anzuspielen. -->
+    <video width="320" height="270" controls autoplay>
+      <source src="beispielvideourl.mp4" type="video/mp4"</source>
+    </video>
+    <!-- Das wäre auch eine Möglichkeit. -->
+    <iframe width="560" height="315" src="Quelle" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+  </center>
+
 </center>
 <script src="js/main.js"></script>
 

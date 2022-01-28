@@ -14,7 +14,6 @@
   <meta name="theme-color" content="#fafafa">
   <link href="css/main.css" rel="stylesheet">
   <!-- Text -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
