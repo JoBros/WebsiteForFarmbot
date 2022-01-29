@@ -33,12 +33,10 @@
     <!-- Das wäre eine Möglichkeit die Videos anzuspielen. -->
     <video controls autoplay playsinline>
     <!-- Hier Videodateipfad einfuegen-->
-      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
-      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
-      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
-      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
-      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
-
+      <source src="video.mp4" type="video/mp4"</source>
+      <source src="pexels-anastasia-ilinamakarova-10720212" type="video/mp4"</source>
+      <source src="pexels-david-gallie-10275544" type="video/mp4"</source>
+      <source src="pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4"</source>
     </video>
     <!-- Das wäre auch eine Möglichkeit. -->
     <!--iframe width="560" height="315" src="Quelle" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
