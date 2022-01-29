@@ -31,7 +31,7 @@
 
   <center>
     <!-- Das wäre eine Möglichkeit die Videos anzuspielen. -->
-    <video width="600px" height="600px" controls autoplay>
+    <video controls autoplay>
     <!-- Hier Videodateipfad einfuegen-->
       <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
     </video>
