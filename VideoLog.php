@@ -33,7 +33,7 @@
     <!-- Das wäre eine Möglichkeit die Videos anzuspielen. -->
     <video width="320" height="270" controls autoplay>
     <!-- Hier Videodateipfad einfuegen-->
-      <source src="\\192.168.100.21\Freigabeordner\xiaomi_camera_videos\788b2ad656fe\2022012719\34M48S_1643308488.mp4" type="video/mp4"</source>
+      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
     </video>
     <!-- Das wäre auch eine Möglichkeit. -->
     <!--iframe width="560" height="315" src="Quelle" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
