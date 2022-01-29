@@ -31,9 +31,14 @@
 
   <center>
     <!-- Das wäre eine Möglichkeit die Videos anzuspielen. -->
-    <video controls autoplay>
+    <video controls autoplay playsinline>
     <!-- Hier Videodateipfad einfuegen-->
       <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
+      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
+      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
+      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
+      <source src="34M48S_1643308488.mp4" type="video/mp4"</source>
+
     </video>
     <!-- Das wäre auch eine Möglichkeit. -->
     <!--iframe width="560" height="315" src="Quelle" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
