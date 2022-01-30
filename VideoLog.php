@@ -33,7 +33,7 @@
     <!-- Das wäre eine Möglichkeit die Videos anzuspielen. -->
     <video controls autoplay playsinline>
     <!-- Hier Videodateipfad einfuegen-->
-      <source src="video.mp4" type="video/mp4"</source>
+      <source src="vid_comp/video.mp4" type="video/mp4"</source>
     </video>
     <!-- Das wäre auch eine Möglichkeit. -->
     <!--iframe width="560" height="315" src="Quelle" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
