@@ -14,7 +14,6 @@
   <meta name="theme-color" content="#fafafa">
   <link href="css/main.css" rel="stylesheet">
   <!-- Text -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -24,6 +23,7 @@
   <a href="index.php">Status</a>
   <a href="bepflanzung.php">Bepflanzung</a>
   <a class="active" href="handbetrieb.php">Handbetrieb</a>
+  <a href="VideoLog.php">Videolog</a>
   <a href="kontakt.php">Kontakt</a>
   <a href="auskunft.php">Auskunft</a>
 </div>
