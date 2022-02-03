@@ -58,7 +58,7 @@
   <table style="mso-cellspacing: 20px;" class="anzeigeStatus">
     <?php
 
-    $servername = "192.168.188.25";
+    $servername = "localhost";
     $username = "me";
     $password = "Alzheimer";
     $dbname = "Farmbot";
@@ -106,7 +106,7 @@
       //      [2,1],
       <?php
       //-> Read from Database
-      $servername = "192.168.188.25";
+      $servername = "localhost";
       $username = "me";
       $password = "Alzheimer";
       $dbname = "Farmbot";
@@ -168,7 +168,7 @@
       //      [2,1],
       <?php
       //-> Read from Database
-      $servername = "192.168.188.25";
+      $servername = "localhost";
       $username = "me";
       $password = "Alzheimer";
       $dbname = "Farmbot";
@@ -217,7 +217,7 @@
       //      [2,1],
       <?php
       //-> Read from Database
-      $servername = "192.168.188.25";
+      $servername = "localhost";
       $username = "me";
       $password = "Alzheimer";
       $dbname = "Farmbot";
@@ -264,7 +264,7 @@
 
   }
   <?php
-  $servername = "192.168.188.25";
+  $servername = "localhost";
   $username = "me";
   $password = "Alzheimer";
   $dbname = "Farmbot";
@@ -292,7 +292,7 @@
   $conn->close();
   ?>
   <?php
-  $servername = "192.168.188.25";
+  $servername = "localhost";
   $username = "me";
   $password = "Alzheimer";
   $dbname = "Farmbot";
@@ -320,7 +320,7 @@
   $conn->close();
   ?>
   <?php
-  $servername = "192.168.188.25";
+  $servername = "localhost";
   $username = "me";
   $password = "Alzheimer";
   $dbname = "Farmbot";
