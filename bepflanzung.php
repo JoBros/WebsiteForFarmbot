@@ -33,7 +33,7 @@
 <table width="60%" height="40%">
 <?php
 //Connection Data
-  $servername = "192.168.100.49";
+  $servername = "192.168.188.25";
   $username = "me";
   $password = "Alzheimer";
   $dbname = "Farmbot";
