@@ -6,7 +6,7 @@ var msg = {
 
 
 //Wichtig!!!IP-Adresseändern!
-let socket = new WebSocket("ws://192.168.100.49:9010");
+let socket = new WebSocket("ws://192.168.188.25:9010");
 socket.onopen = function(e) {
 
 };
