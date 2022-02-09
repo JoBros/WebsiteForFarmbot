@@ -85,7 +85,7 @@ document.getElementById("hakbtn").onmousedown = function(){
 
 document.getElementById("saatbtn").onmousedown = function(){
   let value = document.getElementById("frucht").getAttribute('value');
-  send = ( '{"type":"saat","value":"' + value + '"}');
+  send = 'P';
 }
 
 document.getElementById("saatbtn").onmouseup = function(){
