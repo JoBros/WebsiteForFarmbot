@@ -107,7 +107,7 @@ document.getElementById("E").onmouseup = function(){
 }
 
 function sendingFunction(){
-  console.log((new Date()).toString() + " - " + send );
+  console.log((new Date()) + " - " + send );
   if(oneh === true && send === 'h') {
     socket.send(send);
     oneh = false;
