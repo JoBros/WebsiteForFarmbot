@@ -17,30 +17,7 @@ socket.onmessage = function(event) {
   let found = true;
   while(found){
     try {
-      let braket1 = str.indexOf("{", 0);
-      let braket2 = str.indexOf("}", 0);
-      let strline = str.substr(braket1, braket2 + 1);
-      str = str.substr(braket2 + 1, str.length);
-      let obj = JSON.parse(strline);
-      if(obj.type.toString() === "plantDat"){
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(obj.Sorte));
-        let z = document.getElementById("plantdat");
-        li.setAttribute("id", obj.Sorte);
-        li.setAttribute("style", "list-style: none");
-        li.setAttribute("background", "grey");
-        pflanzendaten.push(obj);
-        li.onclick = function(){
-          //hier den Code einsetzen um allgemeine Daten zur Pflanze anzuzeigen.
-          document.getElementById("pflanzeeins").innerHTML = obj.Sorte
-          document.getElementById("pflanzezwei").innerHTML = obj.Bodenbeschaffenheit;
-          document.getElementById("pflanzevier").innerHTML = obj.Aussaatzeitpunkt_von + "//" + obj.Aussaatzeitpunkt_bis;
-          document.getElementById("pflanzedrei").innerHTML = obj.Wachstumsdauer_min + "//" + obj.Wachstumsdauer_max;
-          document.getElementById("frucht").setAttribute("value", this.innerText);
-        };
-        z.appendChild(li);
-        //console.log("Pflanzendaten empfangen");
-      }else if(obj.type.toString() === "robot_pos"){
+        if(obj.type.toString() === "robot_pos"){
         //console.log("Positionsdaten empfangen");
         let position_y =  obj.y;
         let position_x =  obj.x;
@@ -130,6 +107,7 @@ document.getElementById("E").onmouseup = function(){
 }
 
 function sendingFunction(){
+  console.log((new Date()).toString() + " - " + send );
   if(oneh === true && send === 'h') {
     socket.send(send);
     oneh = false;
@@ -143,7 +121,7 @@ function sendingFunction(){
 
 setInterval(function() {
   sendingFunction()
-}, 80);
+}, 500);
 
 socket.onclose = function(event) {
   if (event.wasClean) {} else {
