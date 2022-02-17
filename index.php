@@ -285,11 +285,11 @@
     //Hier findet die Umrechnung der Daten für die Wasseranzeige statt.
     $datumszahl = $result->num_rows;
     while($row = $result->fetch_assoc()) {
-      $value = 0;
+      $value = (int)0;
       if(((int)$row["value"]) > 830){
-        $value = 0;
+        $value = (int)0;
       }elseif(((int)$row["value"])  < 430){
-        $value = 100;
+        $value = (int)100;
       }else{
         $value = -1/400 * (830 - ((int)$row["value"]) );
       }
