@@ -207,7 +207,6 @@
           }else{
             continue;
           }
-          print_r($array);
           $array_copy = §array;
           sort($array_copy, SORT_NUMERIC);
           print_r($array_copy);
