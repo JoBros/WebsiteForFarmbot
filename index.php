@@ -157,7 +157,7 @@
       curveType: 'function',
       hAxis: {
         textPosition: 'none',
-        title: "Zeit in ms seid 1970"
+        title: "Zeit"
       },
       vAxis: {
         title: "Wert in %",
@@ -263,8 +263,18 @@
       ?>
     ] );
     // create options object with titles, colors, etc.
+    let options = {
 
-
+      curveType: 'function',
+      hAxis: {
+        textPosition: 'none',
+        title: "Zeit"
+      },
+      vAxis: {
+        title: "Wert",
+        minValue: 0
+      }
+    };
     // draw chart on load
     chart = new google.visualization.LineChart(
       document.getElementById("chart_div2")
