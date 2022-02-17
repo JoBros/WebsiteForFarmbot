@@ -207,7 +207,8 @@
           }else{
             continue;
           }
-          $array_copy = §array;
+          $ArrayObject = new ArrayObject($array);
+          $array_copy = $ArrayObject->getArrayCopy();
           sort($array_copy, SORT_NUMERIC);
           print_r($array_copy);
           //$min = min(array_keys($arr)); // hier koennte auch array_flip() statt array_keys() verwendet werden
