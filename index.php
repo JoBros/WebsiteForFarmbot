@@ -196,8 +196,6 @@
       echo "['Datum', 'TS_1'],";
 
       if ($result->num_rows > 0) {
-        $array = array();
-        $i_zahl = 0;
         // output data of each row
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
@@ -219,10 +217,10 @@
           if(!$wert.is_int()){
             continue;
           }
-          echo "[ " . $dt . " ," . $wert . "]";
-          if(0 < ($datumszahl) - 1){
+          if(0 < ($datumszahl) - 1 && $datumszahl != $result->num_rows){
             echo ",";
           }
+          echo "[ " . $dt . " ," . $wert . "]";
           $datumszahl = $datumszahl -1;
         }
       } else {
@@ -296,10 +294,10 @@
           if(!$wert.is_int()){
             continue;
           }
-          echo "[ " . $dt . " ," . $wert . "]";
-          if(0 < ($datumszahl) - 1){
+          if(0 < ($datumszahl) - 1 && $datumszahl != $result->num_rows){
             echo ",";
           }
+          echo "[ " . $dt . " ," . $wert . "]";
           $datumszahl = $datumszahl -1;
         }
       } else {
