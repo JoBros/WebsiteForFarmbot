@@ -202,7 +202,7 @@
         while($row = $result->fetch_assoc()) {
           $array[$i_zahl] = $row["value"];
           $i_zahl = $i_zahl + 1;
-          if($i_zahl > 8){
+          if($i_zahl > 9){
             unset($array[$i_zahl-9]);
           }else{
             continue;
@@ -210,10 +210,9 @@
           $ArrayObject = new ArrayObject($array);
           $array_copy = $ArrayObject->getArrayCopy();
           sort($array_copy, SORT_NUMERIC);
-          print_r($array_copy);
           //$min = min(array_keys($arr)); // hier koennte auch array_flip() statt array_keys() verwendet werden
           //var_dump($arr[$min + $x]);
-          $wert = $array_copy[$i_zahl-5];
+          $wert = $array_copy[4];
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
           echo "[ " . $dt . " ," . $wert . "]";
