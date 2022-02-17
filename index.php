@@ -195,12 +195,24 @@
       echo "['Datum', 'TS_1'],";
 
       if ($result->num_rows > 0) {
+        $array = array();
+        $i_zahl = 0;
         // output data of each row
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
+          $array[$i_zahl] = $row["value"];
+          $i_zahl = $i_zahl + 1;
+          if($i_zahl > 8){
+            unset($array[$i_zahl-9]);
+          }else{
+            continue;
+          }
+          $array_copy = §array;
+          sort($array_copy, SORT_NUMERIC);
+          $wert = $array_copy[$i_zahl-4];
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
-          echo "[ " . $dt . " ," . $row["value"] . "]";
+          echo "[ " . $dt . " ," . $wert . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
           }
