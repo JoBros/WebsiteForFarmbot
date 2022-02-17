@@ -289,6 +289,9 @@
           $wert = $array_copy[4];
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
+          if(!$wert.is_int()){
+            continue;
+          }
           echo "[ " . $dt . " ," . $wert . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
