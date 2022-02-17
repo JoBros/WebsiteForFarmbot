@@ -38,7 +38,7 @@
   <h2>Wassersensorik </h2>
 <center>
   <div style="min-width:30%; min-height:30%; max-width: 90%" id="chart_div"></div>
-  <p>Der aktuelle Bodenwasserwert liegt bei: <Label id="bwW" style="text-underline: #04AA6D; color: darkcyan"></Label> von 1024.</p>
+  <p>Der aktuelle Bodenwasserwert liegt bei: <Label id="bwW" style="text-underline: #04AA6D; color: darkcyan"></Label> von 100 %.</p>
 </center>
 
   <h2>Temperatursensorik</h2>
@@ -125,7 +125,7 @@
       echo "['Datum', 'WS_1'],";
 
       if ($result->num_rows > 0) {
-        // output data of each row
+        // output data of each row => Wassersensor
         $datumszahl = $result->num_rows;
         while($row = $result->fetch_assoc()) {
           $datumzeit=$row["created_at"];
@@ -136,7 +136,7 @@
           }elseif(((int)$row["value"])  < 430){
             $value = (int)100;
           }else{
-            $value = 1/400 * (830 - ((int)$row["value"]) );
+            $value = (1/400 * (830 - ((int)$row["value"]) ))*100; //Berechnung des Anzeigewerts für die Tabelle gemäß Messreihe in %
           }
           echo "[ " . $dt . " ," . (String)$value . "]";
           if(0 < ($datumszahl) - 1){
@@ -299,7 +299,7 @@
       }elseif(((int)$row["value"])  < 430){
         $value = (int)100;
       }else{
-        $value = 1/400 * (830 - ((int)$row["value"]) );
+        $value = (1/400 * (830 - ((int)$row["value"])))*100; //Berechnung des Anzeigewertes für den Text gemäß Messreihe in %
       }
       echo "document.getElementById('bwW').innerText = '". ((String)$value) . "';";
     }
