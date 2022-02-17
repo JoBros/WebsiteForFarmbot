@@ -119,7 +119,7 @@
         die("Connection failed: " . $conn->connect_error);
       }
 
-      $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at desc"; //limit 120
+      $sql = "SELECT value, created_at FROM SensorDat t where sensor='WS_1' ORDER BY created_at desc limit 120"; //limit 120
       $result = $conn->query($sql);
 
       echo "['Datum', 'WS_1'],";
@@ -138,6 +138,7 @@
           }else{
             $value = (1/400 * (830 - ((int)$row["value"]) ))*100; //Berechnung des Anzeigewerts für die Tabelle gemäß Messreihe in %
           }
+
           echo "[ " . $dt . " ," . (String)$value . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
@@ -215,6 +216,9 @@
           $wert = $array_copy[4];
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
+          if(!$wert.is_int()){
+            continue;
+          }
           echo "[ " . $dt . " ," . $wert . "]";
           if(0 < ($datumszahl) - 1){
             echo ",";
