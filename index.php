@@ -210,7 +210,10 @@
           print_r($array);
           $array_copy = §array;
           sort($array_copy, SORT_NUMERIC);
-          $wert = $array_copy[$i_zahl-4];
+          print_r($array_copy);
+          //$min = min(array_keys($arr)); // hier koennte auch array_flip() statt array_keys() verwendet werden
+          //var_dump($arr[$min + $x]);
+          $wert = $array_copy.
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
           echo "[ " . $dt . " ," . $wert . "]";
