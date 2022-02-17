@@ -136,7 +136,7 @@
           }elseif(((int)$row["value"])  < 430){
             $value = (int)100;
           }else{
-            $value = -1/400 * (830 - ((int)$row["value"]) );
+            $value = 1/400 * (830 - ((int)$row["value"]) );
           }
           echo "[ " . $dt . " ," . (String)$value . "]";
           if(0 < ($datumszahl) - 1){
@@ -299,7 +299,7 @@
       }elseif(((int)$row["value"])  < 430){
         $value = (int)100;
       }else{
-        $value = -1/400 * (830 - ((int)$row["value"]) );
+        $value = 1/400 * (830 - ((int)$row["value"]) );
       }
       echo "document.getElementById('bwW').innerText = '". ((String)$value) . "';";
     }
