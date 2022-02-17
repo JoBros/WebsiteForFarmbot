@@ -207,7 +207,7 @@
           }else{
             continue;
           }
-          echo $array;
+          print_r($array);
           $array_copy = §array;
           sort($array_copy, SORT_NUMERIC);
           $wert = $array_copy[$i_zahl-4];
