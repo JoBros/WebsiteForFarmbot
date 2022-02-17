@@ -213,6 +213,7 @@
           //$min = min(array_keys($arr)); // hier koennte auch array_flip() statt array_keys() verwendet werden
           //var_dump($arr[$min + $x]);
           $wert = $array_copy[$i_zahl-5];
+          echo $wert;
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
           echo "[ " . $dt . " ," . $wert . "]";
