@@ -282,18 +282,18 @@
 
 
   if ($result->num_rows > 0) {
-    //Hier findet die Umrechnung der Daten für die Wasseranzeige statt. 
+    //Hier findet die Umrechnung der Daten für die Wasseranzeige statt.
     $datumszahl = $result->num_rows;
     while($row = $result->fetch_assoc()) {
       $value = 0;
-      if($row["value"] > 830){
+      if(((int)$row["value"]) > 830){
         $value = 0;
-      }elseif($row["value"] < 430){
+      }elseif(((int)$row["value"])  < 430){
         $value = 100;
       }else{
-        $value = -1/400 * (830 - $row["value"]);
+        $value = -1/400 * (830 - ((int)$row["value"]) );
       }
-      echo "document.getElementById('bwW').innerText = '". $value . "';";
+      echo "document.getElementById('bwW').innerText = '". ((String)$value) . "';";
     }
   } else {
     echo "Kein Wert verfügbar";
