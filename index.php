@@ -157,10 +157,10 @@
       curveType: 'function',
       hAxis: {
         textPosition: 'none',
-        title: "Zeit"
+        title: "Zeit in ms seid 1970"
       },
       vAxis: {
-        title: "Wert",
+        title: "Wert in %",
         minValue: 0
       }
     };
