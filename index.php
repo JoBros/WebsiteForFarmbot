@@ -209,11 +209,10 @@
           }
           $array_copy = §array;
           $array_copy = sort($array_copy, SORT_NUMERIC);
-          print_r($array_copy);
+          print_r($array);
           //$min = min(array_keys($arr)); // hier koennte auch array_flip() statt array_keys() verwendet werden
           //var_dump($arr[$min + $x]);
           $wert = $array_copy[$i_zahl-5];
-          echo $wert;
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
           echo "[ " . $dt . " ," . $wert . "]";
