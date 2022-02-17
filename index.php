@@ -263,7 +263,7 @@
       ?>
     ] );
     // create options object with titles, colors, etc.
-    let options = {
+    options = {
 
       curveType: 'function',
       hAxis: {
