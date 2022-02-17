@@ -213,6 +213,18 @@
 
       ?>
     ] );
+    options = {
+
+      curveType: 'function',
+      hAxis: {
+        textPosition: 'none',
+        title: "Zeit"
+      },
+      vAxis: {
+        title: "Wert",
+        minValue: 0
+      }
+    };
     // draw chart on load
     chart = new google.visualization.LineChart(
       document.getElementById("chart_div1")
