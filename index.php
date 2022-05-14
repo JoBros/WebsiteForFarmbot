@@ -294,7 +294,7 @@
           if(!$wert.is_int()){
             continue;
           }
-          if(0 < ($datumszahl) - 1 && $datumszahl != $result->num_rows){
+          if(0 < ($datumszahl) && $datumszahl != $result->num_rows){
             echo ",";
           }
           echo "[" . $dt . "," . $wert . "]";
