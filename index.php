@@ -297,7 +297,7 @@
           if(0 < ($datumszahl) - 1 && $datumszahl != $result->num_rows){
             echo ",";
           }
-          echo "[ " . $dt . " ," . $wert . "]";
+          echo "[" . $dt . "," . $wert . "]";
           $datumszahl = $datumszahl -1;
         }
       } else {
