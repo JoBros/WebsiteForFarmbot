@@ -288,7 +288,7 @@
           sort($array_copy, SORT_NUMERIC);
           //$min = min(array_keys($arr)); // hier koennte auch array_flip() statt array_keys() verwendet werden
           //var_dump($arr[$min + $x]);
-          $wert = $array_copy[4];
+          $wert = (int) $array_copy[4];
           $datumzeit=$row["created_at"];
           $dt = strtotime($datumzeit);
           if(!$wert.is_int()){
